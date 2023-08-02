@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="/mypage/myPageMain" extends="baseLayout">
+       <put-attribute name="title" value="마이페이지 메인" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/myPageMain.jsp" />
+    </definition>
+    <definition name="/mypage/myOrderDetail" extends="baseLayout">
+       <put-attribute name="title" value="내 주문 상세 페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/myOrderDetail.jsp" />
+     </definition>
+      <definition name="/mypage/listMyOrderHistory" extends="baseLayout">
+       <put-attribute name="title" value="내 주문 상세 페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/listMyOrderHistory.jsp" />
+     </definition>
+     <definition name="/mypage/myDetailInfo" extends="baseLayout">
+       <put-attribute name="title" value="내 정보 상세 페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/myDetailInfo.jsp" />
+     </definition>
+     
+     <!-- 마이페이지 !-->
+     <definition name="/mypage/myAddressPage" extends="baseLayout">
+       <put-attribute name="title" value="나의 주소록 페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/myAddressPage.jsp" />
+     </definition>
+     <definition name="/mypage/myWithDrawal" extends="baseLayout">
+       <put-attribute name="title" value="회원 탈퇴 페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/mypage/myWithDrawal.jsp" />
+     </definition>
+     
+     <!-- 마이페이지 취소/반품/교환/환불 내역 추가 2023.06.19 by Dean -->
+     <definition name="/mypage/listChangeMyOrderStatus" extends="baseLayout">
+       <put-attribute name="title" value="마이페이지 취소/반품/교환/환불/내역" />  
+       <put-attribute name="body" value="/WEB-INF/views/mypage/listChangeMyOrderStatus.jsp" />
+     </definition>
+     <!-- 마이페이지 취소/반품/교환/환불 내역 > 교환신청 추가 2023.06.21 by Dean -->
+     <definition name="/mypage/exchangeMyOrder" extends="baseLayout">
+       <put-attribute name="title" value="마이페이지 취소/반품/교환/환불/내역" />  
+       <put-attribute name="body" value="/WEB-INF/views/mypage/exchangeMyOrder.jsp" />
+     </definition>
+
+    <definition name="/mypage/returnMyOrder" extends="baseLayout">
+        <put-attribute name="title" value="마이페이지 취소/반품/교환/환불/내역" />
+        <put-attribute name="body" value="/WEB-INF/views/mypage/returnMyOrder.jsp" />
+    </definition>
+
+    <definition name="/member/search_pw" extends="baseLayout">
+         <put-attribute name="title" value="비번 찾기 페이지" />
+         <put-attribute name="body" value="/WEB-INF/views/member/search_pw.jsp" />
+      </definition>
+     
+</tiles-definitions>
+
+

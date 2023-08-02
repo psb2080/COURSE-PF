@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/main/java/com/bookshop01/admin/goods/controller/AdminGoodsControllerImpl.java=UTF-8
+encoding//src/main/java/com/bookshop01/common/base/BaseController.java=UTF-8
+encoding//src/main/java/com/bookshop01/common/file/FileDownloadController.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/controller/MyPageController.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/controller/MyPageControllerImpl.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/dao/MyPageDAO.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/dao/MyPageDAOImpl.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/service/MyPageService.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/service/MyPageServiceImpl.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/vo/ExchangeOrderVO.java=UTF-8
+encoding//src/main/java/com/bookshop01/mypage/vo/ReturnOrderVO.java=UTF-8
+encoding//src/main/java/com/bookshop01/order/vo/OrderVO.java=UTF-8

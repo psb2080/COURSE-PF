@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+      PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.board">
+<resultMap id="articlesResult" type="articleVO">
+    <result property="level" column="level" />
+    <result property="articleNO" column="articleNO" />
+    <result property="parentNO" column="parentNO" />
+    <result property="title" column="title" />
+    <result property="content" column="content" />
+    <result property="writeDate" column="writeDate" />
+    <result property="imageFileName" column="imageFileName" />
+  </resultMap>
+
+  <resultMap id="imgResult" type="imageVO">
+	  <result property="imageFileNO" column="imageFileNO" />
+	  <result property="articleNO" column="articleNO" />
+	  <result property="imageFileName" column="imageFileName" />
+ </resultMap>
+
+  <select id="selectAllArticlesList" resultMap="articlesResult"   >
+    <![CDATA[
+      SELECT level, articleNO, parentNO, title, content, writeDate, imageFileName, member_id
+      from t_board
+      START WITH  parentNO=0
+      CONNECT BY PRIOR articleNO=parentNO 
+      ORDER SIBLINGS BY articleNO DESC		
+    ]]>
+  </select>
+
+	<!--단일이미지 추가  -->
+
+  <insert id="insertNewArticle"  parameterType="java.util.Map">
+		<![CDATA[
+			INSERT into t_board(articleNO,  title, content, imageFileName, member_id)
+			VALUES(#{articleNO},#{title},	#{content}, #{imageFileName},	#{member_id})
+		]]>
+	</insert>
+
+  <select id="selectNewArticleNO" resultType="int"  >
+		<![CDATA[
+			SELECT  nvl(max(articleNO), 0) + 1 from t_board		
+		]]>
+	</select>
+
+  <select id="selectArticle" resultType="articleVO"   parameterType="int">
+    <![CDATA[
+      SELECT * from t_board
+      where articleNO = #{articleNO}		
+    ]]>
+  </select>
+
+  <update id="updateArticle"  parameterType="java.util.Map">
+			update t_board
+			set title=#{title},
+			content=#{content}
+			 <if test="imageFileName!='' and imageFileName!=null">
+			  , imageFileName=#{imageFileName}
+			</if>
+			where articleNO=#{articleNO}
+	</update>
+
+    <select id="selectReply" resultType="articleVO"   parameterType="int">
+        <![CDATA[
+          SELECT content,member_id from t_reply
+          where articleNO = #{articleNO}
+        ]]>
+    </select>
+
+    <select id="NewReplyNO" resultType="int">
+        <![CDATA[
+           SELECT  nvl(max(replyNO), 0) + 1 from t_reply
+        ]]>
+    </select>
+
+    <insert id="insertNewReply"  parameterType="java.util.Map">
+        <![CDATA[
+           INSERT into t_reply(replyNO, content, articleNO, member_id)
+           VALUES(#{replyNO},#{content},#{articleNO}, #{member_id})
+        ]]>
+    </insert>
+
+	<delete id="deleteArticle"  parameterType="int">
+    <![CDATA[
+      delete from t_board
+      where articleNO in (
+         SELECT articleNO FROM  t_board
+         START WITH articleNO = #{articleNO}
+         CONNECT BY PRIOR  articleNO = parentNO )
+    ]]>
+  </delete>
+
+ <!--다중 이미지 추가 SQL문 -->
+  <!--
+    <insert id="insertNewArticle"  parameterType="java.util.Map">
+    <![CDATA[
+      insert into t_board(articleNO, id, title, content, imageFileName)
+      values(#{articleNO}, #{id}, #{title}, #{content}, null)
+    ]]>
+  </insert>
+
+   <insert id="insertNewImage"  parameterType="java.util.Map">
+    <foreach item="item"  collection="list"   open="INSERT ALL"
+                  separator=" " close="SELECT * FROM DUAL" >
+      INTO t_imageFile(imageFileNO, imageFileName, articleNO, regDate)
+      VALUES (#{item.imageFileNO}, #{item.imageFileName}, #{item.articleNO}, sysdate)
+    </foreach>
+  </insert>
+ -->
+
+  <select id="selectNewImageFileNO" resultType="int"  >
+    <![CDATA[
+      SELECT  nvl(max(imageFileNO),0) from t_imageFile		
+    ]]>
+  </select>
+
+
+  <select  id="selectImageFileList" resultMap="imgResult" parameterType="int">
+    <![CDATA[
+      SELECT * from t_imageFile
+      where articleNO=#{articleNO}	
+    ]]>
+  </select>
+
+  <select id="count" resultType="int">
+  	SELECT count(articleNO) from t_board
+  </select>
+
+  <!-- 10개씩 페이징 -->
+  <select id="listPage" parameterType="hashMap" resultType="articleVO">
+  	select articleNO, title, content, member_id, writeDate
+    from (
+        select articleNO, title, content, member_id, writeDate,
+            row_number() over(order by articleNO desc) as rNum
+        from t_board
+        ) t_board
+    where rNum between #{displayPost} and #{postNum}
+        order by articleNO desc
+  </select>
+
+  <!-- 검색기능 -->
+  <select id="listPageSearch" parameterType="hashMap" resultType="articleVO">
+  	  	select articleNO, title, content, member_id, writeDate
+    from (
+        select articleNO, title, content, member_id, writeDate,
+            row_number() over(order by articleNO desc) as rNum
+        from t_board
+        <if test='searchType.equals("title")'>
+        where title like '%' || #{keyword} || '%'
+        </if>
+        <if test='searchType.equals("content")'>
+        where content like '%' || #{keyword} || '%'
+        </if>
+        <if test='searchType.equals("title_content")'>
+        where (title like '%' || #{keyword} || '%')
+        	or (content like '%' || #{keyword} || '%')
+        </if>
+        <if test='searchType.equals("writer")'>
+        where member_id like '%' || #{keyword} || '%'
+        </if>
+        ) t_board
+    where rNum between #{displayPost} and #{postNum}
+        order by articleNO desc
+  </select>
+
+    <select id="searchCount" parameterType="hashMap" resultType="int">
+  	SELECT count(articleNO) from t_board
+  	<if test='searchType.equals("title")'>
+        where title like '%' || #{keyword} || '%'
+        </if>
+        <if test='searchType.equals("content")'>
+        where content like '%' || #{keyword} || '%'
+        </if>
+        <if test='searchType.equals("title_content")'>
+        where (title like '%' || #{keyword} || '%')
+        	or (content like '%' || #{keyword} || '%')
+        </if>
+        <if test='searchType.equals("writer")'>
+        where member_id like '%' || #{keyword} || '%'
+        </if>
+
+  </select>
+  
+  
+</mapper>

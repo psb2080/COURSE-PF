@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="baseLayout"
+		template="/WEB-INF/views/common/layout.jsp">
+		<put-attribute name="title" value="레이아웃 페이지" />
+		<put-attribute name="header" value="/WEB-INF/views/common/header.jsp" />
+		<put-attribute name="side" value="/WEB-INF/views/common/side.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/common/footer.jsp" />
+		<put-attribute name="quickMenu" value="/WEB-INF/views/common/quickMenu.jsp" />
+	</definition>
+
+	<!-- 메인페이지 원본 -->
+	<definition name="/main/main" extends="baseLayout">
+		<put-attribute name="title" value="쇼핑몰 메인페이지" />
+		<put-attribute name="body" value="/WEB-INF/views/main/main.jsp" />
+	</definition>
+	
+	<!-- 메인페이지2 -->
+	<definition name="/main/main2" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main2.jsp" />
+    </definition>
+    
+    <!-- 메인페이지3 -->
+	<definition name="/main/main3" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main3.jsp" />
+    </definition>
+    
+    <!-- 메인페이지4 -->
+	<definition name="/main/main4" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main4.jsp" />
+    </definition>
+    
+    <!-- 메인페이지5  -->
+	<definition name="/main/main5" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main5.jsp" />
+    </definition>
+
+    <!-- 메인페이지6  -->
+	<definition name="/main/main6" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main6.jsp" />
+    </definition>
+    
+    <!-- 메인페이지7  -->
+	<definition name="/main/main7" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main7.jsp" />
+    </definition>
+    
+    <!-- 메인페이지8  -->
+	<definition name="/main/main8" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main8.jsp" />
+    </definition>
+    
+    <!-- 메인페이지9  -->
+	<definition name="/main/main9" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main9.jsp" />
+    </definition>
+    
+    <!-- 메인페이지10  -->
+	<definition name="/main/main10" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main10.jsp" />
+    </definition>
+    
+    <!-- 메인페이지11  -->
+	<definition name="/main/main11" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main11.jsp" />
+    </definition>
+    
+    <!-- 메인페이지12  -->
+	<definition name="/main/main12" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main12.jsp" />
+    </definition>
+    
+    <!-- 메인페이지13  -->
+	<definition name="/main/main13" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main13.jsp" />
+    </definition>
+    
+    <!-- 메인페이지14  -->
+	<definition name="/main/main14" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main14.jsp" />
+    </definition>
+    
+    <!-- 메인페이지15  -->
+	<definition name="/main/main15" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main15.jsp" />
+    </definition>
+    
+    <!-- 메인페이지16  -->
+	<definition name="/main/main16" extends="baseLayout">
+       <put-attribute name="title" value="쇼핑몰 메인페이지" />
+       <put-attribute name="body" value="/WEB-INF/views/main/main16.jsp" />
+    </definition>
+    
+</tiles-definitions>
+
+

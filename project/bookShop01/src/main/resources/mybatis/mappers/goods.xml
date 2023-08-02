@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="mapper.goods">
+	<!-- 리절트 맵 정의 -->
+	<!-- 메인페이지 검색기능(goods_status 통해 검색)에 쓰이는 리절트맵 goodsResult -->	
+	<resultMap id="goodsResult" type="goodsVO">
+		<result property="goods_id" column="goods_id" />
+		<result property="goods_title" column="goods_title" />
+		<result property="goods_price" column="goods_price" />
+		
+		<result property="goods_status" column="goods_status" />
+		<result property="goods_sales_price" column="goods_sales_price" />
+		<result property="goods_delivery_price" column="goods_delivery_price" />
+		<result property="goods_delivery_date" column="goods_delivery_date" />
+		
+		<result property="goods_fileName" column="fileName" />
+		<result property="goods_sort" column="goods_sort" />
+		<result property="goods_contents_order" column="goods_contents_order" />
+	</resultMap>	
+
+	<!-- 일반적인 검색기능(goods_sort 통해 검색)에 쓰이는 리절트맵 goodsResult_bysort -->	
+	<resultMap id="goodsResult_bysort" type="goodsVO">
+		<result property="goods_id" column="goods_id" />
+		<result property="goods_title" column="goods_title" />
+		<result property="goods_price" column="goods_price" />
+		
+		<result property="goods_status" column="goods_status" />
+		
+		<result property="goods_sales_price" column="goods_sales_price" />
+		<result property="goods_delivery_price" column="goods_delivery_price" />
+		<result property="goods_delivery_date" column="goods_delivery_date" />
+		
+		<result property="goods_fileName" column="fileName" />
+		<result property="goods_sort" column="goods_sort" />
+		<result property="goods_contents_order" column="goods_contents_order" />
+	</resultMap>
+	
+	<resultMap id="imageResult" type="ImageFileVO">
+	   <result property="goods_id" column="goods_id" />
+	   <result property="fileName" column="fileName" />
+	   <result property="reg_id" column="reg_id" />
+	   <result property="image_id" column="image_id" />
+	   <result property="fileType" column="fileType" />
+	</resultMap>
+	
+
+	
+   	<!-- 메인에서 사용했던 검색기능(goods_status 통해 검색) -->
+    <select id="selectGoodsList" parameterType="String" resultMap="goodsResult"   >
+        <![CDATA[
+         select t.*
+          from(
+			select g.*,d.fileName from t_shopping_goods g, t_goods_detail_image d
+        	where g.goods_id=d.goods_id 
+        	and d.filetype='main_image'
+        	and goods_status=#{goodsStatus}
+            order by g.goods_creDate desc)  t
+	             where   rowNum <16
+	    ]]>
+	</select>
+	
+	<!-- 일반적인 검색기능(goods_sort 통해 검색) -->
+    <select id="selectGoodsList_bysort" parameterType="String" resultMap="goodsResult_bysort"   >
+        <![CDATA[
+         select t.*
+          from(
+			select g.*,d.fileName from t_shopping_goods g, t_goods_detail_image d
+        	where g.goods_id=d.goods_id 
+        	and d.filetype='main_image'
+        	and goods_sort=#{goodsSort}
+            order by g.goods_creDate desc)  t
+	             where   rowNum <16
+	    ]]>
+	</select>
+	
+	<select id="selectGoodsDetail" resultMap="goodsResult"   parameterType="String"  >
+	    <![CDATA[
+		     select g.*,d.fileName from t_shopping_goods g, t_goods_detail_image d
+	        where g.goods_id=d.goods_id
+	        and d.filetype='main_image'
+	        and g.goods_id=#{goods_id}
+	        order by g.goods_id
+    	]]>
+	</select>
+	<select id="selectGoodsDetailImage" resultMap="imageResult"   parameterType="String"  >
+	    <![CDATA[
+		    	select * from  t_goods_detail_image 
+		    	where  fileType!='main_image'
+				and goods_id=#{goods_id}
+    	]]>
+	</select>
+	
+   <select id="selectGoodsBySearchWord" resultMap="goodsResult"   parameterType="String"  >
+     <![CDATA[
+				select g.*,d.fileName from t_shopping_goods g, t_goods_detail_image d
+		    where g.goods_id=d.goods_id
+		    and d.filetype='main_image'
+		    and g.goods_title like '%'|| #{searchWord} || '%'
+		    order by g.goods_creDate desc
+		]]>
+	</select>	
+	
+	<select id="selectKeywordSearch" resultType="String"   parameterType="String"  >
+	    <![CDATA[
+        select goods_title from t_shopping_goods 
+        where         
+        goods_title like '%'|| #{keyword} || '%'
+        order by goods_creDate desc
+		]]>
+	</select>
+	
+	<!-- 상품 댓글 작성 -->
+	<insert id="addReply">
+		insert into goods_reply(goods_id, member_id, repNum, repCon)
+			values( #{goods_id}, #{member_id}, goods_reply_seq.nextval, #{repCon})
+	</insert>
+	
+	<!-- 상품 댓글 리스트 -->
+	<select id="replyList" resultType="com.bookshop01.goods.vo.ReplyVO">
+		select 
+			r.goods_id, r.member_id, r.repNum, r.repCon, r.repDate, m.member_name
+		from goods_reply r 
+			inner join t_shopping_member m
+				on r.member_id = m.member_id
+			where goods_id = #{goods_id}
+	</select>
+	
+	<!-- 상품 댓글 삭제 -->
+	<delete id="deleteReply">
+		delete goods_reply
+			where repNum = #{repNum}
+				and Member_id = #{member_id}
+	</delete>
+	
+	<!-- 아이디 체크 -->
+	<select id="replyIdCheck" resultType="String">
+		select member_id
+			from goods_reply
+				where repNum = #{repNum}
+	</select>
+	
+	<!-- 상품 소감(댓글) 수정 -->
+	<update id="modifyReply">
+	 update goods_reply
+	     set
+	         repCon = #{repCon}
+	     where repNum = #{repNum}
+	         and member_id = #{member_id}
+	</update>
+
+</mapper>
