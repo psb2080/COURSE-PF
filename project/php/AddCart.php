@@ -1,6 +1,6 @@
 <?php     
-//    $con = mysqli_connect("localhost", "gdkgate", "kgd951753#", "gdkgate") or die("MySqlDB 접속 실패 !!");
-    $con = mysqli_connect("db-instance-001.cfaktkh1zamw.ap-northeast-2.rds.amazonaws.com", "admin", "admin001", "scott") or die("MySqlDB 접속 실패 !!");
+//    $con = mysqli_connect("localhost", "gdkgate", "", "gdkgate") or die("MySqlDB 접속 실패 !!");
+    $con = mysqli_connect("AWS mysql db 엔드포인트", "DB username", "DB password", "DB database") or die("MySqlDB 접속 실패 !!");
     mysqli_query($con,'SET NAMES utf8');
 
     $goods_id = isset($_POST["goods_id"]) ? $_POST["goods_id"] : "";  
