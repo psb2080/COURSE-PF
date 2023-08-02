@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Result id="f36d79fc-5990-4bb6-994e-8ec8406ef7a7" name="T_네이버_증권_시가총액_데이터추출" result="Pass" start="2023-04-24T08:51:15.545" end="2023-04-24T08:51:25.475" jobId="Designer_20230424_175111_928">
+  <Step id="Sb568bb2d955b41ab96130f48b24a61be" taskName="T_네이버_증권_시가총액_데이터추출" type="Chrome" name="ChromeGetTableData" displayName="ChromeGetTableData" callDepth="1" depth="1" num="1" result="Pass" start="2023-04-24T08:51:15.607" end="2023-04-24T08:51:17.388" displayTime="1.8s">
+    <Variables>
+      <Variable name="TableData" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="false" runtimeType="Undefined" value="&lt;undefined&gt;" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="&lt;LatestBrowser&gt;" runtimeType="Any" key="CHROME_Browser" displayKey="Browser" visible="true" required="true" />
+      <Property value="10" runtimeType="Integer" key="CHROME_WaitTimeSec" displayKey="Page Load Timeout" visible="true" required="true" />
+      <Property value="'https://finance.naver.com/sise/sise_market_sum.naver'" runtimeType="String" key="CHROME_PageUrl" displayKey="Page Url" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="CHROME_UsePageUrl" displayKey="UsePageUrl" visible="false" required="false" />
+      <Property value="https://finance.naver.com/sise/sise_market_sum.naver" runtimeType="String" key="CHROME_FullPageUrl" displayKey="FullPageUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSrc" displayKey="Iframe Source" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeIndexes" displayKey="Iframe Index" visible="true" required="false" />
+      <Property value="'html/body/div[3]/div[2]/div[2]/div[3]/table[1]/tbody/tr/td'" runtimeType="String" key="CHROME_ElementPath" displayKey="Element Path" visible="true" required="false" />
+      <Property value="'//div[3]/table[1]/tbody/tr/td'" runtimeType="String" key="CHROME_ExecuteQuery" displayKey="ExecuteQuery" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="CHROME_QueryType" displayKey="Query Type" visible="true" required="false" />
+      <Property value="&lt;Too Long&gt; H4sIAAAAAAAEAO19e3fbxrXv3/KnQNiTSKphEg8+bUmp/IziZ2wnadLbywWREAkLBBgSlKy0Xst25FzHdhvnVqrlRvJRTp3Y7nFW ... 23052 more" runtimeType="String" key="CHROME_FullHTML" displayKey="FullHTML" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_Element" displayKey="Element" visible="false" required="false" />
+      <Property value="Text" runtimeType="String" key="CHROME_DataType" displayKey="Data Type" visible="true" required="false" />
+      <Property value="12,000" runtimeType="String" key="CHROME_ExpectedValue" displayKey="Expected Value" visible="true" required="false" />
+      <Property value="2" runtimeType="Integer" key="CHROME_Scope" displayKey="Scope" visible="false" required="false" />
+      <Property value="&lt;Too Long&gt; this.TableData : [[&quot;&quot;,&quot;1&quot;,&quot;삼성전자&quot;,&quot;65,200&quot;,&quot; 500&quot;,&quot;-0.76%&quot;,&quot;100&quot;,&quot;12,892,761&quot;,&quot;10,538,622&quot;,&quot;65,300&quot;,&quot; ... 5517 more" runtimeType="Array2D" key="CHROME_Data" displayKey="Data" visible="true" required="true" />
+      <Property value="13" runtimeType="String" key="CHROME_ColumnCnt" displayKey="ColumnCnt" visible="false" required="false" />
+      <Property value="&lt;Too Long&gt; [{&quot;Index&quot;:0,&quot;Tag&quot;:&quot;TD&quot;,&quot;Data&quot;:[{&quot;Name&quot;:&quot;index&quot;,&quot;Value&quot;:&quot;4&quot;,&quot;IsUse&quot;:false},{&quot;Name&quot;:&quot;class&quot;,&quot;Value&quot;:&quot;n ... 1082 more" runtimeType="String" key="CHROME_ChromeElements" displayKey="ChromeElements" visible="false" required="false" />
+      <Property value="'/html/body/div[3]/div[2]/div[2]/div[3]/table[1]/tbody/tr[5]/td[4]'" runtimeType="String" key="CHROME_SingleQueryForMultiple" displayKey="SingleQueryForMultiple" visible="false" required="false" />
+      <Property value="https://finance.naver.com/sise/sise_market_sum.naver" runtimeType="String" key="CHROME_PagesearchUrl" displayKey="PagesearchUrl" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeFullSrc" displayKey="IframeFullSrc" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_IframeSearchSrc" displayKey="IframeSearchSrc" visible="false" required="false" />
+      <Property value="false" runtimeType="Boolean" key="CHROME_IsTextEdit" displayKey="IsTextEdit" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="CHROME_HTMLTagName" displayKey="HTMLTagName" visible="false" required="false" />
+      <Property value="'14, 19'" runtimeType="String" key="Mouse_Point" displayKey="Click Point" visible="false" required="false" />
+      <Property value="701,657" runtimeType="Point" key="Mouse_AppPoint" displayKey="AppPoint" visible="false" required="false" />
+      <Property value="693,649" runtimeType="Point" key="Mouse_WinPoint" displayKey="WinPoint" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_RemoteAppName" displayKey="RemoteAppName" visible="false" required="false" />
+      <Property value="Invoke;GridItem;TableItem;ScrollItem;LegacyIAccessible" runtimeType="String" key="Target_SupportedPatterns" displayKey="SupportedPatterns" visible="true" required="false" />
+      <Property value="30,15" runtimeType="Size" key="Target_SizeTolerance" displayKey="SizeTolerance" visible="false" required="false" />
+      <Property value="0" runtimeType="Integer" key="Target_SelectImageIndex" displayKey="SelectImageIndex" visible="true" required="false" />
+      <Property value="JustBest" runtimeType="String" key="Target_ImageIndexMethod" displayKey="ImageIndexMethod" visible="true" required="false" />
+      <Property value="NotUse" runtimeType="String" key="Target_UseImageMatch" displayKey="UseImageMatch" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="Target_UseSearchAround" displayKey="UseSearchAround" visible="false" required="false" />
+      <Property value="42.1050932.4.-34738" runtimeType="String" key="Target_RuntimeID" displayKey="RuntimeID" visible="false" required="false" />
+      <Property value="Chrome" runtimeType="String" key="Target_FrameworkID" displayKey="FrameworkID" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_AutomationID" displayKey="AutomationID" visible="false" required="false" />
+      <Property value="" runtimeType="String" key="Target_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyHelp" displayKey="LegacyHelp" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyDesc" displayKey="LegacyDesc" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_LegacyValue" displayKey="LegacyValue" visible="true" required="false" />
+      <Property value="'상승 12,000'" runtimeType="String" key="Target_LegacyName" displayKey="LegacyName" visible="true" required="false" />
+      <Property value="''" runtimeType="String" key="Target_Value" displayKey="Value" visible="true" required="true" />
+      <Property value="'상승 12,000'" runtimeType="String" key="Target_Name" displayKey="Name" visible="true" required="true" />
+      <Property value="687,638,74,34" runtimeType="Rect" key="Target_Bounds" displayKey="Bounds" visible="true" required="false" />
+      <Property value="DataItem" runtimeType="String" key="Target_ClassType" displayKey="ClassType" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; 'Pane|Chrome_WidgetWin_1||Win32/Document|Chrome_RenderWidgetHostHWND|82918208|Chrome/Group||wrap|Chr ... 101 more" runtimeType="String" key="Target_ObjectPath" displayKey="ObjectPath" visible="true" required="true" />
+      <Property value="Chrome_WidgetWin_1" runtimeType="String" key="Application_ClassName" displayKey="ClassName" visible="false" required="false" />
+      <Property value="-8,-8,1696,1026" runtimeType="Rect" key="Application_Bounds" displayKey="Bounds" visible="false" required="false" />
+      <Property value="Pane" runtimeType="String" key="Application_ClassType" displayKey="ClassType" visible="false" required="false" />
+      <Property value="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" runtimeType="Bitmap" key="Target_Capture" displayKey="Image" visible="true" required="false" />
+      <Property value="'시가총액 : 네이버 증권 - Chrome'" runtimeType="String" key="Application_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="chrome" runtimeType="String" key="Application_ProcessName" displayKey="ProcessName" visible="true" required="true" />
+      <Property value="15240" runtimeType="Integer" key="Application_PID" displayKey="PID" visible="false" required="false" />
+      <Property value="Designer" runtimeType="String" key="Target_CapturedBy" displayKey="CapturedBy" visible="false" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sfdbc8233435643bca8d29d739f8e5035" taskName="T_네이버_증권_시가총액_데이터추출" type="Flow" name="ExecuteScript" displayName="ExecuteScript" callDepth="1" depth="1" num="2" result="Pass" start="2023-04-24T08:51:17.410" end="2023-04-24T08:51:18.157" displayTime="0.7s">
+    <Variables>
+      <Variable name="editData" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="Undefined" value="&lt;undefined&gt;" />
+      <Variable name="TableData" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;Too Long&gt; [[&quot;&quot;,&quot;1&quot;,&quot;삼성전자&quot;,&quot;65,200&quot;,&quot; 500&quot;,&quot;-0.76%&quot;,&quot;100&quot;,&quot;12,892,761&quot;,&quot;10,538,622&quot;,&quot;65,300&quot;,&quot;65,700&quot;,&quot;3,892,29 ... 5500 more" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="증권데이터가공" runtimeType="String" key="Conditions_Title" displayKey="Title" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; &#xD;&#xA;&#xD;&#xA;var index = 1 ;&#xD;&#xA;this.editData = [ ] ;&#xD;&#xA;var saveArr = [ ] ;&#xD;&#xA;&#xD;&#xA;for( var i = 0 ; i &lt; this.TableDa ... 534 more" runtimeType="String" key="Key_Script" displayKey="Script" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sf606b33e5b3d4ffd84ac837c28a75a34" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="CreateExcel" displayName="CreateExcel" callDepth="1" depth="1" num="3" result="Pass" start="2023-04-24T08:51:18.165" end="2023-04-24T08:51:19.962" displayTime="1.8s">
+    <Variables>
+      <Variable name="fileName" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'네이버증권_20230424.xlsx'" />
+      <Variable name="filePath" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'C:\\Users\\505-20\\Downloads\\증권데이터\\'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'C:\\Users\\505-20\\Downloads\\증권데이터\\네이버증권_20230424.xlsx'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="File_OverWrite" displayKey="OverWrite" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S1357c039a6b44f1f8b1e1f24071c66a5" taskName="T_네이버_증권_시가총액_데이터추출" type="Win" name="CloseAll" displayName="CloseAll" callDepth="1" depth="1" num="4" result="Pass" start="2023-04-24T08:51:19.978" end="2023-04-24T08:51:21.000" displayTime="1s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="onError" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="'EXCEL.EXE'" runtimeType="String" key="Application_ProcessName" displayKey="Application" visible="true" required="true" />
+      <Property value="true" runtimeType="Boolean" key="Options_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S32d60b9c3ed045e099e5e0192e993919" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="OpenExcel" displayName="OpenExcel" callDepth="1" depth="1" num="5" result="Pass" start="2023-04-24T08:51:21.015" end="2023-04-24T08:51:23.494" displayTime="2.5s">
+    <Variables>
+      <Variable name="fileName" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'네이버증권_20230424.xlsx'" />
+      <Variable name="filePath" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="String" value="'C:\\Users\\505-20\\Downloads\\증권데이터\\'" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="this.excel : Workbook" runtimeType="Any" key="Output_OutputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'C:\\Users\\505-20\\Downloads\\증권데이터\\네이버증권_20230424.xlsx'" runtimeType="String" key="File_Path" displayKey="Path" visible="true" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_Invisible" displayKey="Invisible" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_ReadOnly" displayKey="ReadOnly" visible="true" required="false" />
+      <Property value="true" runtimeType="Boolean" key="File_Maximize" displayKey="Maximize" visible="true" required="false" />
+      <Property value="false" runtimeType="Boolean" key="File_ExecuteShell" displayKey="Execute Shell" visible="true" required="false" />
+      <Property value="60" runtimeType="Integer" key="File_Timeout" displayKey="Timeout" visible="false" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_UsePassword" displayKey="UsePassword" visible="true" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_OpenPassword" displayKey="OpenPassword" visible="false" required="false" />
+      <Property value="&lt;Secure Data&gt;" runtimeType="String" key="File_WritePassword" displayKey="WritePassword" visible="false" required="false" />
+      <Property value="Comma(,)" runtimeType="String" key="File_TextDelimiter" displayKey="Text Delimiter" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S5b695a7cd57f4543b03fef72e532da10" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="CreateWorkSheet" displayName="CreateWorkSheet" callDepth="1" depth="1" num="6" result="Pass" start="2023-04-24T08:51:23.498" end="2023-04-24T08:51:23.655" displayTime="0.2s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="'네이버증권'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="1" runtimeType="Integer" key="Sheet_Position" displayKey="Position" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S02605ae45464477d8c68cc5d127bb056" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="WriteRange" displayName="WriteRange" callDepth="1" depth="1" num="8" result="Pass" start="2023-04-24T08:51:23.657" end="2023-04-24T08:51:24.070" displayTime="0.4s">
+    <Variables>
+      <Variable name="editData" scope="Normal" owner="T_네이버_증권_시가총액_데이터추출" declareType="Any" isChanged="false" isChangable="true" runtimeType="Array2D" value="&lt;Too Long&gt; [['1', '삼성전자', '65,200', ' 500', '-0.76%', '100', '12,892,761', '10,538,622', '65,300', '65,700', &lt;s ... 36 more" />
+    </Variables>
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="&lt;Too Long&gt; [['1', '삼성전자', '65,200', ' 500', '-0.76%', '100', '12,892,761', '10,538,622', '65,300', '65,700', &lt;s ... 36 more" runtimeType="Array2D" key="Input_DataArray" displayKey="DataArray" visible="true" required="true" />
+      <Property value="'네이버증권'" runtimeType="String" key="Sheet_SheetName" displayKey="SheetName" visible="true" required="true" />
+      <Property value="'A1'" runtimeType="String" key="Sheet_StartCell" displayKey="StartCell" visible="true" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_AutoSave" displayKey="AutoSave" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="Sad07b207d5fb481c94b65ddd742a67e9" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="SaveExcel" displayName="SaveExcel" callDepth="1" depth="1" num="9" result="Pass" start="2023-04-24T08:51:24.078" end="2023-04-24T08:51:24.120" displayTime="0s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="" runtimeType="String" key="File_SaveAs" displayKey="SaveAs" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <Step id="S8204618ac8cf4ed49e06f750f7cd6583" taskName="T_네이버_증권_시가총액_데이터추출" type="Excel" name="CloseExcel" displayName="CloseExcel" callDepth="1" depth="1" num="10" result="Pass" start="2023-04-24T08:51:24.124" end="2023-04-24T08:51:25.474" displayTime="1.3s">
+    <Variables />
+    <Properties setIndex="0">
+      <Property value="" runtimeType="String" key="Options_OnError" displayKey="On Error" visible="true" required="false" />
+      <Property value="" runtimeType="String" key="Key_Description" displayKey="Description" visible="true" required="false" />
+      <Property value="Workbook" runtimeType="Any" key="Input_InputExcel" displayKey="Excel" visible="true" required="true" />
+      <Property value="false" runtimeType="Boolean" key="File_Force" displayKey="Force" visible="true" required="false" />
+    </Properties>
+  </Step>
+  <JobInfo>
+    <Info name="Bot Version" value="3.0.100.00404" />
+    <Info name="Resolution" value="1680 x 1050" />
+    <Info name="Language" value="한국어 (대한민국)" />
+    <Info name="BotID" value="DESIGNER-G00OT" />
+  </JobInfo>
+</Result>

@@ -1,0 +1,127 @@
+<Process id="6eb09e20-8126-41d8-b582-8425b2d892b9" type="process" workType="foreground" name="P_데이터추출" version="1.0" designerVersion="3.0.100.00404" readonly="false" isValid="true" DesignedBy="Designer" Template="" StepCount="5">
+  <Properties>
+    <Property key="Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="default process" enabled="True" />
+    <Property key="onBefore" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onAfter" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="onError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" enabled="True" />
+    <Property key="Timeout" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="0" />
+    <Property key="RunningTime" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="94" />
+    <Property key="Os" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="Microsoft Windows 10 Pro64비트" />
+    <Property key="Resolution" controlType="String" valueType="System.String" formatType="String_Size" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="1680x1050" />
+    <Property key="CreatedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-04-24 11:33:21" />
+    <Property key="CreatedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastModifiedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="2023-07-27 16:03:14" />
+    <Property key="LastModifiedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedDate" controlType="String" valueType="System.String" formatType="String_DateTime" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+    <Property key="LastPublishedBy" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+  </Properties>
+  <LinkItems />
+  <Variables>
+    <Variable name="URL" scope="Normal" valueType="Any" formatType="Any" initValue="'www.naver.com'" desc="" />
+  </Variables>
+  <Steps>
+    <Step id="S566c23facd5b420eb91176b61da200a3" ver="301230406" createVer="301230406" type="Flow" name="RunTask" dpName="RunTask" dpValue="this.result" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="d8893a50-4932-4245-a004-b3fc70ab3cfb" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="T_네이버_열기" />
+        <Property type="Flow" key="Input_in_URL" controlType="InputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.URL" order="1" />
+        <Property type="Flow" key="Output_out_result" controlType="OutputControlType" valueType="System.Object" formatType="Variable" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="this.result" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'T_네이버_열기', {'in_URL':this.URL});]]></Script>
+    </Step>
+    <Step id="S098d7172ff9d40d59581aae0ec75712f" ver="301230406" createVer="301230406" type="Flow" name="RunTask" dpName="RunTask" dpValue="" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="da8db460-5a2d-4301-b036-ba16ec46f4f9" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="T_네이버_증권이동" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'T_네이버_증권이동', null);]]></Script>
+    </Step>
+    <Step id="S8fb7dfdbba904fbb8e117f5e67498e0f" ver="301230406" createVer="301230406" type="Flow" name="RunTask" dpName="RunTask" dpValue="" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="cb462074-26bc-489b-8815-3266e7214ffc" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="T_네이버_증권_시가총액이동" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'T_네이버_증권_시가총액이동', null);]]></Script>
+    </Step>
+    <Step id="S3a0d00180f424f98b9392e0bd7d7bf5b" ver="301230406" createVer="301230406" type="Flow" name="RunTask" dpName="RunTask" dpValue="" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="11f9dec5-ffd0-4b32-912d-6b0816d332f5" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="T_네이버_증권_시가총액_조건테이블선택" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'T_네이버_증권_시가총액_조건테이블선택', null);]]></Script>
+    </Step>
+    <Step id="S87bad1e3a22b489896cbb59ab31c3677" ver="301230406" createVer="301230406" type="Flow" name="RunTask" dpName="RunTask" dpValue="" dpValue2="" dpImage="" tag="" depth="1" stmttype="Normal" enabled="True" mainSet="0">
+      <Properties id="d6a6fa72-f727-4d67-ba01-304189000960" type="Flow">
+        <Property type="Flow" key="Options_OnError" controlType="PropertyItemEventHandlerView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Key_Description" controlType="PropertyItemTextEditorView" valueType="System.String" formatType="String" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="" />
+        <Property type="Flow" key="Conditions_TaskName" controlType="String" valueType="System.String" formatType="String" required="False" visible="True" readonly="True" encrypted="False" isChanged="N" value="T_네이버_증권_시가총액_데이터추출" />
+      </Properties>
+      <RelatedSteps />
+      <Script><![CDATA[RunTask(this, 'T_네이버_증권_시가총액_데이터추출', null);]]></Script>
+    </Step>
+  </Steps>
+  <Libraries>
+    <string>FlowControl</string>
+  </Libraries>
+  <JScript><![CDATA[function P_데이터추출() {
+
+    this.URL = 'www.naver.com';
+
+    this.RPAGOTOENABLE = false;
+    this.GotoStepRetryCntMap = {};
+    this.GotoBlockMap = {};
+    this.GotoReverseBlockMap = {};
+    this.GotoStepBlockTypeMap = {};
+
+
+    this.run = function() {
+
+        //------------------------------------------------
+        STEP('S566c23facd5b420eb91176b61da200a3', '[1] RunTask');
+        RunTask(this, 'T_네이버_열기', {'in_URL':this.URL});
+
+        //------------------------------------------------
+        STEP('S098d7172ff9d40d59581aae0ec75712f', '[2] RunTask');
+        RunTask(this, 'T_네이버_증권이동', null);
+
+        //------------------------------------------------
+        STEP('S8fb7dfdbba904fbb8e117f5e67498e0f', '[3] RunTask');
+        RunTask(this, 'T_네이버_증권_시가총액이동', null);
+
+        //------------------------------------------------
+        STEP('S3a0d00180f424f98b9392e0bd7d7bf5b', '[4] RunTask');
+        RunTask(this, 'T_네이버_증권_시가총액_조건테이블선택', null);
+
+        //------------------------------------------------
+        STEP('S87bad1e3a22b489896cbb59ab31c3677', '[5] RunTask');
+        RunTask(this, 'T_네이버_증권_시가총액_데이터추출', null);
+
+
+    }
+
+    this.execute = function() {
+        var result = null;
+        result = this.run()
+        if (result != null)
+            return result;
+    }
+}
+]]></JScript>
+  <Diagram version="1.300" nodesize="Normal">
+    <StepNodes>
+      <StepNode step_id="S566c23facd5b420eb91176b61da200a3" group_name="" folded="False" />
+      <StepNode step_id="S098d7172ff9d40d59581aae0ec75712f" group_name="" folded="False" />
+      <StepNode step_id="S8fb7dfdbba904fbb8e117f5e67498e0f" group_name="" folded="False" />
+      <StepNode step_id="S3a0d00180f424f98b9392e0bd7d7bf5b" group_name="" folded="False" />
+      <StepNode step_id="S87bad1e3a22b489896cbb59ab31c3677" group_name="" folded="False" />
+    </StepNodes>
+  </Diagram>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>6xj9sKgGa+6t+jgqEBRXzo6YJdo=</DigestValue></Reference></SignedInfo><SignatureValue>pDG9Th40QrbUZxuWSG9k+a8dhz9Rm+fkaoaIAdtoL4VdxLNSxiTdYQlOPlGi9Fc0v9W+0dDuJrVVE9n0uhO0BGyfNiLsl7YutINM9/4DNukltTXJGbIwK/DwdCfkP1z4l4z/8H0A9EoHENOg48L0T3Wv8RCEsZOQV+QVH+BCI4yZkZKTLPgoxeSR4K6d3MJzRR+a70KWl6ZxO6mFvG0D8g2TjX1GHFNSy+V7v/xBHywXQpQEI2p67bRfqVvvcI2h8UZzqbeHDhxxJPFAPUZyHLdvb3rjMW6bMUuoKj5/KPnLVe8F7czmsRB+HFDiy1Vz1Rt6VVFvqVdyUnQnikZNGg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-AYT3U, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Process>

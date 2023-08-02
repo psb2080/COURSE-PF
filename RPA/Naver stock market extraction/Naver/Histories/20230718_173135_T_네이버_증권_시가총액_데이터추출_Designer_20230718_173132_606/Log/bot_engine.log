@@ -1,0 +1,546 @@
+﻿2023-07-18 17:27:28,747 [T1] INFO  EngineStarter
+BOT Engine Start - v3.0.100.00404
+BOT ID: D_20230718_172728_043
+BOT PID: 12432
+BOT PPID: 16428
+BOT Working Directory: C:\Users\USER\AppData\Roaming\Brity RPA Designer
+
+2023-07-18 17:27:28,760 [T1] INFO  EngineStarter
+System Language: ko-KR
+Resolution: 1680 x 1050
+
+2023-07-18 17:27:28,990 [T1] INFO  Config
+Initialize Config
+
+2023-07-18 17:27:29,022 [T1] DEBUG Config
+Config Loaded
+
+2023-07-18 17:27:29,028 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-07-18 17:27:29,032 [T1] INFO  Config
+Initialize Resource Config
+
+2023-07-18 17:27:29,057 [T1] DEBUG Config
+Refresh Language Information
+
+2023-07-18 17:27:29,123 [T1] INFO  Config
+All Config Initialized.
+
+2023-07-18 17:27:29,127 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-07-18 17:27:29,135 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-07-18 17:27:29,173 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-07-18 17:27:29,177 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-07-18 17:27:29,194 [T4] DEBUG JobService
+Connect to agent service
+
+2023-07-18 17:27:29,216 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-07-18 17:27:29,223 [T4] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-07-18 17:27:29,223 [T4] DEBUG JobService
+Open connection
+
+2023-07-18 17:27:29,224 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-07-18 17:27:29,236 [T4] DEBUG JobService
+Register engine to agent
+
+2023-07-18 17:27:29,237 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Chrome
+
+2023-07-18 17:27:29,249 [T4] DEBUG JobService
+Engine is connected to agent service.
+
+2023-07-18 17:27:29,249 [T4] DEBUG JobService
+Owner Process PID: 16428
+
+2023-07-18 17:27:29,256 [T4] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-07-18 17:27:29,440 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Desktop
+
+2023-07-18 17:27:29,618 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Excel
+
+2023-07-18 17:27:29,777 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Flow
+
+2023-07-18 17:27:29,887 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.IE
+
+2023-07-18 17:27:29,978 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageConverter
+
+2023-07-18 17:27:30,043 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageRecognition
+
+2023-07-18 17:27:30,228 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Net
+
+2023-07-18 17:27:30,305 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Orchestra
+
+2023-07-18 17:27:30,393 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ProcessFlow
+
+2023-07-18 17:27:30,484 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.SAP
+
+2023-07-18 17:27:30,564 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Web
+
+2023-07-18 17:27:30,669 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Win
+
+2023-07-18 17:27:30,783 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1680,1050
+
+2023-07-18 17:27:30,812 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Outlook
+
+2023-07-18 17:27:30,930 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Pdf
+
+2023-07-18 17:27:30,990 [T1] DEBUG LibraryManager
+Load Library - Chrome
+
+2023-07-18 17:27:30,993 [T1] DEBUG LibraryManager
+Load Library - Desktop
+
+2023-07-18 17:27:30,994 [T1] DEBUG LibraryManager
+Load Library - Excel
+
+2023-07-18 17:27:30,995 [T1] DEBUG LibraryManager
+Load Library - Flow
+
+2023-07-18 17:27:30,995 [T1] DEBUG LibraryManager
+Load Library - IE
+
+2023-07-18 17:27:30,996 [T1] DEBUG LibraryManager
+Load Library - ImageConverter
+
+2023-07-18 17:27:30,997 [T1] DEBUG LibraryManager
+Load Library - ImageRecognition
+
+2023-07-18 17:27:30,997 [T1] DEBUG LibraryManager
+Load Library - Net
+
+2023-07-18 17:27:30,998 [T1] DEBUG LibraryManager
+Load Library - Orchestra
+
+2023-07-18 17:27:30,999 [T1] DEBUG LibraryManager
+Load Library - Outlook
+
+2023-07-18 17:27:31,001 [T1] DEBUG LibraryManager
+Load Library - Pdf
+
+2023-07-18 17:27:31,002 [T1] DEBUG LibraryManager
+Load Library - SAP
+
+2023-07-18 17:27:31,002 [T1] DEBUG LibraryManager
+Load Library - Web
+
+2023-07-18 17:27:31,003 [T1] DEBUG LibraryManager
+Load Library - Win
+
+2023-07-18 17:27:31,003 [T1] DEBUG LibraryManager
+Load Library - WorkFlow
+
+2023-07-18 17:27:31,009 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-07-18 17:27:31,149 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-07-18 17:27:31,161 [T1] INFO  App
+Launch Arguments: Total: 6 |  -eid D_20230718_172728_043 -runtype ProcRunner -ppid 16428
+
+2023-07-18 17:27:31,161 [T1] DEBUG Config
+Refresh Language Information
+
+2023-07-18 17:27:31,162 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-07-18 17:31:35,682 [T8] INFO  JobService
+Start Job: T_네이버_증권_시가총액_데이터추출 (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "F:\\[ECMEDU]\\BRITY\\기초실습\\Histories\\20230718_173135_T_네이버_증권_시가총액_데이터추출_Designer_20230718_173132_606",
+  "JobLogDir": "F:\\[ECMEDU]\\BRITY\\기초실습\\Histories\\20230718_173135_T_네이버_증권_시가총액_데이터추출_Designer_20230718_173132_606\\Log",
+  "JobScreenshotDir": "F:\\[ECMEDU]\\BRITY\\기초실습\\Histories\\20230718_173135_T_네이버_증권_시가총액_데이터추출_Designer_20230718_173132_606\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-07-18 17:31:35",
+  "EndTime": null,
+  "Data": null,
+  "EngineID": "D_20230718_172728_043",
+  "EnginePID": 0,
+  "EngineRecommededVersion": "",
+  "JobId": "Designer_20230718_173132_606",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "F:\\[ECMEDU]\\BRITY\\기초실습\\T_네이버_증권_시가총액_데이터추출.proc",
+  "ProcessId": "f36d79fc-5990-4bb6-994e-8ec8406ef7a7",
+  "ProcessVer": "",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 16428,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-07-18 17:31:35,810 [T9] DEBUG JobService
+Waiting library loading...
+
+2023-07-18 17:31:35,813 [T9] DEBUG Config
+Reload User Settings
+
+2023-07-18 17:31:35,814 [T9] INFO  Config
+UserSettings Reloaded =>
+ - PlayPopup : true -> false
+ - LastExecution : YYk5eW1fhBaHanCaePv4nufEke8yks4mPKv7NNKa/1U= -> +bnsgsolDnva5rMUUrwzd8oZSiOwWXbnCz5SbypmcKg=
+
+2023-07-18 17:31:35,814 [T9] INFO  JobService
+Config Loading Completed.
+
+2023-07-18 17:31:35,814 [T9] DEBUG JobService
+Config Loading Time: 3 ms.
+
+2023-07-18 17:31:35,822 [T9] INFO  JobManager
+Create JobManager instance for job T_네이버_증권_시가총액_데이터추출(Designer_20230718_173132_606)
+
+2023-07-18 17:31:35,827 [T9] INFO  JobRequest
+Job ID : Designer_20230718_173132_606
+Project Path  : F:\[ECMEDU]\BRITY\기초실습\기초실습.proj
+Process Name  : T_네이버_증권_시가총액_데이터추출
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 16428
+
+2023-07-18 17:31:35,830 [T10] INFO  JobRequest
+Start Callback Sender
+
+2023-07-18 17:31:35,830 [T10] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-07-18 17:31:35,872 [T9] DEBUG ProjectManager
+Set Project Information
+
+2023-07-18 17:31:35,896 [T9] INFO  PlayOptionManager
+PlayOption
+- Step Interval : 1
+- Disable DrawBounds : False
+- Invoke First : False
+- Allow Upload of DumpScreen results : False
+
+2023-07-18 17:31:35,897 [T9] INFO  JobRunner
+Initialize Script Engine
+
+2023-07-18 17:31:35,911 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-07-18 17:31:35,935 [T10] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-07-18 17:31:36,772 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-07-18 17:31:36,773 [T10] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-07-18 17:31:36,782 [T9] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-07-18 17:31:36,783 [T9] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-07-18 17:31:36,784 [T10] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-07-18 17:31:36,784 [TScriptEngine] INFO  JobRunner
+RunProcess start
+
+2023-07-18 17:31:36,786 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-07-18 17:31:36,786 [TScriptEngine] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-07-18 17:31:36,804 [T10] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-07-18 17:31:37,849 [TScriptEngine] DEBUG ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-07-18 17:31:37,911 [TScriptEngine] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-07-18 17:31:37,937 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - T_네이버_증권_시가총액_데이터추출
+##############################################################
+f36d79fc-5990-4bb6-994e-8ec8406ef7a7
+T_네이버_증권_시가총액_데이터추출
+
+
+2023-07-18 17:31:37,986 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_증권_시가총액_데이터추출
+**************************************************************
+ - STEP 1: Sb568bb2d955b41ab96130f48b24a61be (1/10) - (1/9)
+ - [1] ChromeGetTableData
+
+
+2023-07-18 17:31:39,370 [TScriptEngine] INFO  JobRequest
+ - STEP 2: Sfdbc8233435643bca8d29d739f8e5035 (2/10) - (2/9)
+ - [2] ExecuteScript
+
+
+2023-07-18 17:31:40,115 [TScriptEngine] INFO  JobRequest
+ - STEP 3: Sf606b33e5b3d4ffd84ac837c28a75a34 (3/10) - (3/9)
+ - [3] CreateExcel
+
+
+2023-07-18 17:31:56,974 [TScriptEngine] INFO  JobRequest
+ - STEP 4: S1357c039a6b44f1f8b1e1f24071c66a5 (4/10) - (4/9)
+ - [4] CloseAll
+
+
+2023-07-18 17:31:56,993 [TScriptEngine] DEBUG UIAHelper
+CloseAll: EXCEL.EXE
+
+2023-07-18 17:31:58,003 [TScriptEngine] INFO  JobRequest
+ - STEP 5: S32d60b9c3ed045e099e5e0192e993919 (5/10) - (5/9)
+ - [5] OpenExcel
+
+
+2023-07-18 17:32:00,327 [TScriptEngine] INFO  JobRequest
+ - STEP 6: S5b695a7cd57f4543b03fef72e532da10 (6/10) - (6/9)
+ - [6] CreateWorkSheet
+
+
+2023-07-18 17:32:00,446 [TScriptEngine] INFO  JobRequest
+ - STEP 7: S02605ae45464477d8c68cc5d127bb056 (8/10) - (7/9)
+ - [8] WriteRange
+
+
+2023-07-18 17:32:00,718 [TScriptEngine] INFO  JobRequest
+ - STEP 8: Sad07b207d5fb481c94b65ddd742a67e9 (9/10) - (8/9)
+ - [9] SaveExcel
+
+
+2023-07-18 17:32:00,759 [TScriptEngine] ERROR ExcelBase
+SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:00,760 [TScriptEngine] WARN  ExcelPlayer
+Retry - Fail to save excel: SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:01,266 [TScriptEngine] ERROR ExcelBase
+SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:01,267 [TScriptEngine] WARN  ExcelPlayer
+Retry - Fail to save excel: SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:01,771 [TScriptEngine] ERROR ExcelBase
+SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:01,771 [TScriptEngine] WARN  ExcelPlayer
+Retry - Fail to save excel: SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:02,278 [TScriptEngine] ERROR ExcelBase
+SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:02,278 [TScriptEngine] WARN  ExcelPlayer
+Retry - Fail to save excel: SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:02,783 [TScriptEngine] ERROR ExcelBase
+SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:27,520 [TScriptEngine] WARN  ScriptSupport
+[CATCH_STEP_EXCEPTION] Process: T_네이버_증권_시가총액_데이터추출
+Step: SaveExcel (9/10)
+
+Error: 저장에 실패했습니다.
+ - SaveAsExcel 실행에 실패하였습니다 : 파일에 액세스할 수 없습니다. 다음 중 필요한 작업을 하십시오. 
+
+• 지정한 폴더가 있는지 확인하십시오. 
+• 파일이 들어 있는 폴더가 읽기 전용이 아닌지 확인하십시오. 
+• 파일 이름에   <  >  ?  [  ]  : | * 등의 문자가 들어 있는지 확인하십시오.
+• 파일이나 경로 이름은 218자를 초과할 수 없습니다.
+
+2023-07-18 17:32:27,523 [TScriptEngine] INFO  JobRequest
+ - STEP 9: S8204618ac8cf4ed49e06f750f7cd6583 (10/10) - (9/9)
+ - [10] CloseExcel
+
+
+2023-07-18 17:32:27,559 [TScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2023-07-18 17:32:28,738 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_증권_시가총액_데이터추출
+
+2023-07-18 17:32:28,742 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - T_네이버_증권_시가총액_데이터추출
+##############################################################
+f36d79fc-5990-4bb6-994e-8ec8406ef7a7
+T_네이버_증권_시가총액_데이터추출
+
+
+2023-07-18 17:32:28,755 [TScriptEngine] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-07-18 17:32:28,755 [TScriptEngine] DEBUG JobManager
+Set Result State: Completed
+
+2023-07-18 17:32:28,758 [TScriptEngine] INFO  JobRunner
+Make report.
+
+2023-07-18 17:32:28,919 [TScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2023-07-18 17:32:28,921 [TScriptEngine] DEBUG JobRunner
+OnProcessCompleted
+
+2023-07-18 17:32:28,922 [T18] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-07-18 17:32:28,925 [TScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2023-07-18 17:32:28,929 [TScriptEngine] DEBUG JobRunner
+Remove all libraries
+
+2023-07-18 17:32:28,940 [TScriptEngine] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-07-18 17:32:28,942 [TScriptEngine] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-07-18 17:32:28,944 [TScriptEngine] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-07-18 17:32:28,944 [TScriptEngine] INFO  JobRunner
+All Resources Clear
+
+2023-07-18 17:32:28,945 [TScriptEngine] DEBUG JobRunner
+OnCompleted
+
+2023-07-18 17:32:28,946 [TScriptEngine] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-07-18 17:32:28,946 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-07-18 17:32:28,946 [TScriptEngine] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-07-18 17:32:28,952 [T10] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-07-18 17:32:28,955 [TScriptEngine] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-07-18 17:32:28,963 [TScriptEngine] INFO  JobRunner
+RunProcess end
+
+2023-07-18 17:32:28,963 [T1] INFO  JobService
+Exit - Shutdown Engine BOT
+
+2023-07-18 17:32:28,963 [T10] INFO  JobRequest
+Callback - EngineClosed
+
+2023-07-18 17:32:28,963 [T10] INFO  JobService
+Disconnect agent service
+
+2023-07-18 17:32:28,966 [T10] DEBUG JobRequest
+End of Callback Sender
+

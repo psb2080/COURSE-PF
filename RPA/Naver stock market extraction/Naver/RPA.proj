@@ -1,0 +1,59 @@
+<Project id="1090bd3b-879a-4b93-bbb0-21aa39c2fe0b" namespace="" name="RPA" desc="2023.04.24 기초 실습" category="project" workType="foreground" version="1.00" lastPublishedDate="" lastPublishedBy="" createdDate="2023-04-24 11:33:20" createdBy="" lastPublishedServer="" latestProcess="P_데이터추출" designerVersion="3.0.100.00404" DesignedBy="">
+  <SharedTask isExpended="false" />
+  <NormalTask isExpended="true">
+    <LinkItem id="2d21715b-9499-4df4-94c0-5d987c6a0179" category="NormalTask" isChanged="Y" desc="" stepCount="1" name="T_네이버_열기">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="338901b2-44ac-4d1a-86cd-2cbd06e02e71" category="NormalTask" isChanged="Y" desc="" stepCount="10" name="T_네이버_증권_시가총액_데이터추출">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="38a9216d-8da5-44cb-87ab-99a2aa42f081" category="NormalTask" isChanged="Y" desc="" stepCount="22" name="T_네이버_증권_시가총액_조건테이블선택">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="f2b9678f-a50f-4529-bb52-21e0311f5a73" category="NormalTask" isChanged="Y" desc="" stepCount="4" name="T_네이버_증권_시가총액이동">
+      <Properties />
+    </LinkItem>
+    <LinkItem id="09e4c976-ddd4-4a76-92a0-e15fd6055049" category="NormalTask" isChanged="Y" desc="" stepCount="2" name="T_네이버_증권이동">
+      <Properties />
+    </LinkItem>
+  </NormalTask>
+  <Event isExpended="false" />
+  <Process isExpended="true">
+    <LinkItem id="6eb09e20-8126-41d8-b582-8425b2d892b9" category="Process" isChanged="Y" desc="default process" hash="3Tt0fHVNIVtidB+JwkLgaSkBlgPE00YFZi3xDYYRp5A=" updatedDate="2023-04-24T02:33:22.933Z" stepCount="5" name="P_데이터추출">
+      <Properties />
+    </LinkItem>
+  </Process>
+  <CustomLibraries isExpended="false" />
+  <LibraryTemplate isExpended="false" />
+  <Resources isExpended="false" />
+  <RemoteProcess isExpended="false" />
+  <RecorderData isExpended="false" />
+  <Asset />
+  <Library />
+  <Variables>
+    <Variable name="Data" scope="Global" valueType="Any" formatType="Any" initValue="" desc="" />
+  </Variables>
+  <Properties>
+    <Property key="PlayOption_StepInterval" controlType="Int32" valueType="System.Int32" formatType="Integer" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="1" />
+    <Property key="PlayOption_DisableDrawBounds" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+    <Property key="PlayOption_InvokeFirst" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+    <Property key="PlayOption_AllowUploadDumpScreenResult" controlType="Boolean" valueType="System.Boolean" formatType="Boolean" required="False" visible="True" readonly="False" encrypted="False" isChanged="N" value="False" />
+  </Properties>
+  <Libraries>
+    <string>FlowControl</string>
+    <string>Chrome</string>
+    <string>Excel</string>
+    <string>App</string>
+    <string>System</string>
+  </Libraries>
+  <DisplayLibraries>
+    <string>Flow</string>
+    <string>Win</string>
+    <string>Net</string>
+    <string>Excel</string>
+    <string>Desktop</string>
+    <string>Chrome</string>
+    <string>ImageRecognition</string>
+    <string>DataConverter</string>
+  </DisplayLibraries>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mM95IZ2kHRybGHiOQkEsMO5fFhc=</DigestValue></Reference></SignedInfo><SignatureValue>aXWAzTsMJbwK93BNz71GkIrebqD9Mn0jC+OOix7bxByDx8dA2C9B35Kudm+QGhXHy9RuJNmRA2IEKp9ojgptJcjX0Kn2pWX4JFVALHVHP+4SRiP5R/ZjnJOlYOS7ljAhgbVEj5QTc8J8Nok/+uhkstyq2S2bhNxcRz5HtFd80OLSqYsUcxUWjVymzMZCJrn70FYPU6rzJJd2ym1fXw2MqWUQCw8xhMJTrUgbLtqjXPPHfLUo7ocW3BirdzVrVNbacliL9xnFcRcAnQqgEDjaA+Jjl+fwu2F44hOoQqH8fux7mwUqLcl0J/OQu77fjIfRBjQCNtZngPe5jlFJk/Uh6A==</SignatureValue><KeyInfo><X509Data><X509SubjectName>CN=DESIGNER-AYT3U, O=bwrpa.samsungsds.com, OU=IPA_DESIGNER, L="", S="", C=""</X509SubjectName></X509Data></KeyInfo></Signature></Project>

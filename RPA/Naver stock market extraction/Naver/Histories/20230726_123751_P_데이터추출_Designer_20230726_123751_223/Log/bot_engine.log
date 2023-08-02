@@ -1,0 +1,2537 @@
+﻿2023-07-26 12:37:52,632 [T1] INFO  EngineStarter
+BOT Engine Start - v3.0.100.00404
+BOT ID: D_20230726_123751_783
+BOT PID: 11468
+BOT PPID: 4024
+BOT Working Directory: C:\Users\USER\AppData\Roaming\Brity RPA Designer
+
+2023-07-26 12:37:52,645 [T1] INFO  EngineStarter
+System Language: ko-KR
+Resolution: 1680 x 1050
+
+2023-07-26 12:37:52,884 [T1] INFO  Config
+Initialize Config
+
+2023-07-26 12:37:52,919 [T1] DEBUG Config
+Config Loaded
+
+2023-07-26 12:37:52,926 [T1] INFO  Config
+Orchestrator Service => https://bwrpa.samsungsds.com:8777
+
+2023-07-26 12:37:52,930 [T1] INFO  Config
+Initialize Resource Config
+
+2023-07-26 12:37:52,956 [T1] DEBUG Config
+Refresh Language Information
+
+2023-07-26 12:37:53,012 [T1] INFO  Config
+All Config Initialized.
+
+2023-07-26 12:37:53,016 [T1] DEBUG KeyManager
+Initialize KeyManager
+
+2023-07-26 12:37:53,023 [T1] DEBUG KeyManager
+Device ID is initialized.
+
+2023-07-26 12:37:53,059 [T1] INFO  CertLicenseClient
+Initialize certificate.
+
+2023-07-26 12:37:53,064 [T1] DEBUG CertLicenseClient
+Set Security Protocol: Tls12
+
+2023-07-26 12:37:53,101 [T5] DEBUG JobService
+Connect to agent service
+
+2023-07-26 12:37:53,107 [T1] DEBUG ApplicationInitializer
+InitMode: Thread
+
+2023-07-26 12:37:53,116 [T1] INFO  LibraryManager
+Load Libraries - Started
+
+2023-07-26 12:37:53,130 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Chrome
+
+2023-07-26 12:37:53,153 [T5] DEBUG JobService
+JobService URL : net.tcp://127.0.0.1:59001/rpa/agent
+
+2023-07-26 12:37:53,153 [T5] DEBUG JobService
+Open connection
+
+2023-07-26 12:37:53,196 [T5] DEBUG JobService
+Register engine to agent
+
+2023-07-26 12:37:53,231 [T5] DEBUG JobService
+Engine is connected to agent service.
+
+2023-07-26 12:37:53,231 [T5] DEBUG JobService
+Owner Process PID: 4024
+
+2023-07-26 12:37:53,237 [T5] INFO  JobService
+Start monitoring owner process is terminated.
+
+2023-07-26 12:37:53,358 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Desktop
+
+2023-07-26 12:37:53,541 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Excel
+
+2023-07-26 12:37:53,556 [T8] INFO  JobService
+Start Job: P_데이터추출 (Foreground)
+{
+  "UsePIP": false,
+  "UserID": null,
+  "UserPWD": null,
+  "IsRunning": false,
+  "ResultMessage": null,
+  "JobWorkDir": "F:\\[ECMEDU]\\BRITY\\RPA\\Histories\\20230726_123751_P_데이터추출_Designer_20230726_123751_223",
+  "JobLogDir": "F:\\[ECMEDU]\\BRITY\\RPA\\Histories\\20230726_123751_P_데이터추출_Designer_20230726_123751_223\\Log",
+  "JobScreenshotDir": "F:\\[ECMEDU]\\BRITY\\RPA\\Histories\\20230726_123751_P_데이터추출_Designer_20230726_123751_223\\Log\\Screenshot",
+  "TotalProcessStepCount": 0,
+  "CurrentStepNo": 0,
+  "CurrentStepName": null,
+  "StartTime": "2023-07-26 12:37:51",
+  "EndTime": null,
+  "Data": null,
+  "EngineID": "D_20230726_123751_783",
+  "EnginePID": 0,
+  "EngineRecommededVersion": "",
+  "JobId": "Designer_20230726_123751_223",
+  "JobType": 1,
+  "UserAuthentication": null,
+  "ProcessPath": "F:\\[ECMEDU]\\BRITY\\RPA\\P_데이터추출.proc",
+  "ProcessId": "6eb09e20-8126-41d8-b582-8425b2d892b9",
+  "ProcessVer": "1.0",
+  "ProcessArgs": null,
+  "RequesterType": 3,
+  "RequesterId": "designer",
+  "RequesterPID": 4024,
+  "OptionsJsonString": null,
+  "TimeoutSec": 0,
+  "State": 0
+}
+
+2023-07-26 12:37:53,723 [T6] DEBUG JobService
+Waiting library loading...
+
+2023-07-26 12:37:55,118 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Flow
+
+2023-07-26 12:37:55,230 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.IE
+
+2023-07-26 12:37:55,328 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageConverter
+
+2023-07-26 12:37:55,394 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ImageRecognition
+
+2023-07-26 12:37:55,595 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Net
+
+2023-07-26 12:37:55,671 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Orchestra
+
+2023-07-26 12:37:55,763 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.ProcessFlow
+
+2023-07-26 12:37:55,852 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.SAP
+
+2023-07-26 12:37:55,932 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Web
+
+2023-07-26 12:37:56,039 [T1] DEBUG AddInLoader
+Load Assembly : IPA.Lib.Win
+
+2023-07-26 12:37:56,160 [T1] INFO  ScreenCapture
+Default Screen Capture Bounds: 0,0,1680,1050
+
+2023-07-26 12:37:56,190 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Outlook
+
+2023-07-26 12:37:56,316 [T1] DEBUG AddInLoader
+Load Assembly : BrityWorks.AddIn.Pdf
+
+2023-07-26 12:37:56,389 [T1] DEBUG LibraryManager
+Load Library - Chrome
+
+2023-07-26 12:37:56,391 [T1] DEBUG LibraryManager
+Load Library - Desktop
+
+2023-07-26 12:37:56,392 [T1] DEBUG LibraryManager
+Load Library - Excel
+
+2023-07-26 12:37:56,393 [T1] DEBUG LibraryManager
+Load Library - Flow
+
+2023-07-26 12:37:56,393 [T1] DEBUG LibraryManager
+Load Library - IE
+
+2023-07-26 12:37:56,394 [T1] DEBUG LibraryManager
+Load Library - ImageConverter
+
+2023-07-26 12:37:56,394 [T1] DEBUG LibraryManager
+Load Library - ImageRecognition
+
+2023-07-26 12:37:56,396 [T1] DEBUG LibraryManager
+Load Library - Net
+
+2023-07-26 12:37:56,396 [T1] DEBUG LibraryManager
+Load Library - Orchestra
+
+2023-07-26 12:37:56,397 [T1] DEBUG LibraryManager
+Load Library - Outlook
+
+2023-07-26 12:37:56,400 [T1] DEBUG LibraryManager
+Load Library - Pdf
+
+2023-07-26 12:37:56,400 [T1] DEBUG LibraryManager
+Load Library - SAP
+
+2023-07-26 12:37:56,401 [T1] DEBUG LibraryManager
+Load Library - Web
+
+2023-07-26 12:37:56,401 [T1] DEBUG LibraryManager
+Load Library - Win
+
+2023-07-26 12:37:56,402 [T1] DEBUG LibraryManager
+Load Library - WorkFlow
+
+2023-07-26 12:37:56,407 [T1] DEBUG LibraryManager
+Load built-in script libraries
+
+2023-07-26 12:37:56,577 [T1] INFO  LibraryManager
+Load Libraries - Completed.
+
+2023-07-26 12:37:56,591 [T1] INFO  App
+Launch Arguments: Total: 6 |  -eid D_20230726_123751_783 -runtype ProcRunner -ppid 4024
+
+2023-07-26 12:37:56,591 [T1] DEBUG Config
+Refresh Language Information
+
+2023-07-26 12:37:56,592 [T1] DEBUG LibraryManager
+LibraryManager Initialized.
+
+2023-07-26 12:37:56,597 [T6] DEBUG Config
+Reload User Settings
+
+2023-07-26 12:37:56,598 [T6] INFO  JobService
+Config Loading Completed.
+
+2023-07-26 12:37:56,598 [T6] DEBUG JobService
+Config Loading Time: 2874 ms.
+
+2023-07-26 12:37:56,611 [T6] INFO  JobManager
+Create JobManager instance for job P_데이터추출(Designer_20230726_123751_223)
+
+2023-07-26 12:37:56,616 [T6] INFO  JobRequest
+Job ID : Designer_20230726_123751_223
+Project Path  : F:\[ECMEDU]\BRITY\RPA\RPA.proj
+Process Name  : P_데이터추출
+Engine Mode   : Designer
+Requester Type: DesignerRequester PID : 4024
+
+2023-07-26 12:37:56,621 [T7] INFO  JobRequest
+Start Callback Sender
+
+2023-07-26 12:37:56,621 [T7] DEBUG JobRequest
+Step Callback Interval: 500
+
+2023-07-26 12:37:56,670 [T6] DEBUG ProjectManager
+Set Project Information
+
+2023-07-26 12:37:56,694 [T6] INFO  PlayOptionManager
+PlayOption
+- Step Interval : 1
+- Disable DrawBounds : False
+- Invoke First : False
+- Allow Upload of DumpScreen results : False
+
+2023-07-26 12:37:56,695 [T6] INFO  JobRunner
+Initialize Script Engine
+
+2023-07-26 12:37:56,710 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Initializing
+##############################################################
+
+
+2023-07-26 12:37:56,735 [T7] DEBUG JobRequest
+Callback - State: Initializing
+
+
+2023-07-26 12:37:57,711 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Ready
+##############################################################
+
+
+2023-07-26 12:37:57,719 [T7] DEBUG JobRequest
+Callback - State: Ready
+
+
+2023-07-26 12:37:57,726 [T6] INFO  JobRunnerHook
+HotKey Hook Started
+
+2023-07-26 12:37:57,727 [T6] INFO  JobRequest
+##############################################################
+### STATE: Starting
+##############################################################
+
+
+2023-07-26 12:37:57,728 [TScriptEngine] INFO  JobRunner
+RunProcess start
+
+2023-07-26 12:37:57,729 [T7] DEBUG JobRequest
+Callback - State: Starting
+
+
+2023-07-26 12:37:57,730 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Running
+##############################################################
+
+
+2023-07-26 12:37:57,730 [TScriptEngine] INFO  JobRequest
+Last job life cycle state: Running
+
+2023-07-26 12:37:57,740 [T7] DEBUG JobRequest
+Callback - State: Running
+
+
+2023-07-26 12:37:58,819 [TScriptEngine] DEBUG ScreenCapture
+DirectX Screen Capture Initialized.
+
+2023-07-26 12:37:58,880 [TScriptEngine] DEBUG JobRunner
+DirectX ScreenCapture Checked.
+
+2023-07-26 12:37:58,915 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartProcess - P_데이터추출
+##############################################################
+6eb09e20-8126-41d8-b582-8425b2d892b9
+P_데이터추출
+
+
+2023-07-26 12:37:58,967 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: P_데이터추출
+**************************************************************
+ - STEP 1: S566c23facd5b420eb91176b61da200a3 (1/5) - (1/42)
+ - [1] RunTask
+
+
+2023-07-26 12:37:59,070 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_네이버_열기
+##############################################################
+2d21715b-9499-4df4-94c0-5d987c6a0179
+T_네이버_열기
+
+
+2023-07-26 12:37:59,085 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_열기
+**************************************************************
+ - STEP 2: S5ccb91c989a846739f1f5b6b8f57d3d7 (1/1) - (2/42)
+ - [1] ChromeOpen
+
+
+2023-07-26 12:37:59,249 [T6] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-07-26 12:37:59,492 [T6] DEBUG ChromeCommonExtension
+extension default locale empty
+
+2023-07-26 12:38:00,893 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_열기 => Microsoft.ClearScript.V8.V8ScriptItem
+
+2023-07-26 12:38:00,912 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_네이버_열기
+##############################################################
+2d21715b-9499-4df4-94c0-5d987c6a0179
+T_네이버_열기
+
+
+2023-07-26 12:38:00,924 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: P_데이터추출
+**************************************************************
+ - STEP 3: S098d7172ff9d40d59581aae0ec75712f (2/5) - (3/42)
+ - [2] RunTask
+
+
+2023-07-26 12:38:00,929 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_네이버_증권이동
+##############################################################
+09e4c976-ddd4-4a76-92a0-e15fd6055049
+T_네이버_증권이동
+
+
+2023-07-26 12:38:00,932 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_증권이동
+**************************************************************
+ - STEP 4: Sb66ffd4fa1de4ddc9b20425b05c9f191 (1/2) - (4/42)
+ - [1] WaitAppear
+
+
+2023-07-26 12:38:02,102 [T23] INFO  UIAEventHandler
+Start UIA event handler
+
+2023-07-26 12:38:03,641 [TScriptEngine] INFO  JobRequest
+ - STEP 5: S29df0de63318453ea4741d8a4e315afa (2/2) - (5/42)
+ - [2] Click
+
+
+2023-07-26 12:38:04,645 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:04,645 [T17] INFO  UIAEventHandler
+waiting for 936 msec during the screen structure is changing.
+
+2023-07-26 12:38:05,785 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_증권이동
+
+2023-07-26 12:38:05,786 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_네이버_증권이동
+##############################################################
+09e4c976-ddd4-4a76-92a0-e15fd6055049
+T_네이버_증권이동
+
+
+2023-07-26 12:38:05,789 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: P_데이터추출
+**************************************************************
+ - STEP 6: S8fb7dfdbba904fbb8e117f5e67498e0f (3/5) - (6/42)
+ - [3] RunTask
+
+
+2023-07-26 12:38:05,793 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_네이버_증권_시가총액이동
+##############################################################
+f2b9678f-a50f-4529-bb52-21e0311f5a73
+T_네이버_증권_시가총액이동
+
+
+2023-07-26 12:38:05,796 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_증권_시가총액이동
+**************************************************************
+ - STEP 7: S554cbe00ed864949a2775a61b86447e7 (1/4) - (7/42)
+ - [1] WaitAppear
+
+
+2023-07-26 12:38:06,995 [TScriptEngine] INFO  JobRequest
+ - STEP 8: Sba731afc97434ec8a1a2bafda0b571bf (2/4) - (8/42)
+ - [2] Click
+
+
+2023-07-26 12:38:07,985 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:07,985 [T6] INFO  UIAEventHandler
+waiting for 944 msec during the screen structure is changing.
+
+2023-07-26 12:38:08,196 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:08,196 [T6] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:08,758 [TScriptEngine] INFO  JobRequest
+ - STEP 9: S7d099286df5a49fa8ae6e4038e5a5969 (3/4) - (9/42)
+ - [3] WaitAppear
+
+
+2023-07-26 12:38:10,198 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:10,198 [T25] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:10,209 [TScriptEngine] INFO  JobRequest
+ - STEP 10: S9fa9554851544baea9021173b36e398d (4/4) - (10/42)
+ - [4] Click
+
+
+2023-07-26 12:38:11,099 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:11,099 [T26] INFO  UIAEventHandler
+waiting for 842 msec during the screen structure is changing.
+
+2023-07-26 12:38:11,463 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:11,463 [T26] INFO  UIAEventHandler
+waiting for 72 msec during the screen structure is changing.
+
+2023-07-26 12:38:12,030 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_증권_시가총액이동
+
+2023-07-26 12:38:12,031 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_네이버_증권_시가총액이동
+##############################################################
+f2b9678f-a50f-4529-bb52-21e0311f5a73
+T_네이버_증권_시가총액이동
+
+
+2023-07-26 12:38:12,033 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: P_데이터추출
+**************************************************************
+ - STEP 11: S3a0d00180f424f98b9392e0bd7d7bf5b (4/5) - (11/42)
+ - [4] RunTask
+
+
+2023-07-26 12:38:12,040 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_네이버_증권_시가총액_조건테이블선택
+##############################################################
+38a9216d-8da5-44cb-87ab-99a2aa42f081
+T_네이버_증권_시가총액_조건테이블선택
+
+
+2023-07-26 12:38:12,045 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_증권_시가총액_조건테이블선택
+**************************************************************
+ - STEP 12: Sc84c80be0bc14489957ce845b620f612 (1/22) - (12/42)
+ - [1] Assign
+
+
+2023-07-26 12:38:12,095 [TScriptEngine] INFO  JobRequest
+ - STEP 13: S79ca87a21f854fa19607dbb1dd8bdacc (2/22) - (13/42)
+ - [2] WaitAppear
+
+
+2023-07-26 12:38:13,322 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:13,322 [T12] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:13,332 [TScriptEngine] INFO  JobRequest
+ - STEP 14: Sfc85215ba1ce44c2900f1e217512dc24 (3/22) - (14/42)
+ - [3] ChromeGetTableData
+
+
+2023-07-26 12:38:13,660 [TScriptEngine] INFO  JobRequest
+ - STEP 15: Se19877daedcf42b9af65425ae6d9fac9 (4/22) - (15/42)
+ - [4] Foreach
+
+
+2023-07-26 12:38:13,680 [TScriptEngine] INFO  JobRequest
+ - STEP 16: S5cd83eca9a6a4f028a620b67e88dd5ef (5/22) - (16/42)
+ - [5] Foreach
+
+
+2023-07-26 12:38:13,687 [TScriptEngine] INFO  JobRequest
+ - STEP 17: S0c44654008c841159a0058b09345b194 (6/22) - (17/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:13,691 [TScriptEngine] INFO  JobRequest
+ - STEP 18: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (18/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:13,694 [TScriptEngine] INFO  JobRequest
+ - STEP 19: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (20/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:13,695 [TScriptEngine] INFO  JobRequest
+ - STEP 20: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (21/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:14,218 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:14,218 [T18] INFO  UIAEventHandler
+waiting for 469 msec during the screen structure is changing.
+
+2023-07-26 12:38:14,604 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:14,604 [T18] INFO  UIAEventHandler
+waiting for 101 msec during the screen structure is changing.
+
+2023-07-26 12:38:14,614 [TScriptEngine] INFO  JobRequest
+ - STEP 21: S3b65a20d1728462982dfa724387e33d5 (11/22) - (22/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:14,618 [TScriptEngine] INFO  JobRequest
+ - STEP 22: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (23/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:15,504 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:15,504 [T6] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:15,656 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:15,656 [T6] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:15,666 [TScriptEngine] INFO  JobRequest
+ - STEP 23: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:15,668 [TScriptEngine] INFO  JobRequest
+ - STEP 24: S0c44654008c841159a0058b09345b194 (6/22) - (29/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:15,670 [TScriptEngine] INFO  JobRequest
+ - STEP 25: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (29/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:15,672 [TScriptEngine] INFO  JobRequest
+ - STEP 26: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (29/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:15,673 [TScriptEngine] INFO  JobRequest
+ - STEP 27: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (29/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:16,555 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:16,555 [T24] INFO  UIAEventHandler
+waiting for 836 msec during the screen structure is changing.
+
+2023-07-26 12:38:16,920 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:16,920 [T24] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:16,922 [TScriptEngine] INFO  JobRequest
+ - STEP 28: S3b65a20d1728462982dfa724387e33d5 (11/22) - (29/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:16,925 [TScriptEngine] INFO  JobRequest
+ - STEP 29: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (29/42)
+ - [13] Else
+
+
+2023-07-26 12:38:16,927 [TScriptEngine] INFO  JobRequest
+ - STEP 30: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (29/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:16,929 [TScriptEngine] INFO  JobRequest
+ - STEP 31: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (29/42)
+ - [16] Else
+
+
+2023-07-26 12:38:16,931 [TScriptEngine] INFO  JobRequest
+ - STEP 32: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (29/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:16,932 [TScriptEngine] INFO  JobRequest
+ - STEP 33: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:16,934 [TScriptEngine] INFO  JobRequest
+ - STEP 34: S0c44654008c841159a0058b09345b194 (6/22) - (29/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:16,937 [TScriptEngine] INFO  JobRequest
+ - STEP 35: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (29/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:16,939 [TScriptEngine] INFO  JobRequest
+ - STEP 36: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (29/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:16,941 [TScriptEngine] INFO  JobRequest
+ - STEP 37: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (29/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:17,820 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:17,820 [T18] INFO  UIAEventHandler
+waiting for 827 msec during the screen structure is changing.
+
+2023-07-26 12:38:18,214 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:18,214 [T18] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:18,217 [TScriptEngine] INFO  JobRequest
+ - STEP 38: S3b65a20d1728462982dfa724387e33d5 (11/22) - (29/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:18,220 [TScriptEngine] INFO  JobRequest
+ - STEP 39: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (29/42)
+ - [13] Else
+
+
+2023-07-26 12:38:18,221 [TScriptEngine] INFO  JobRequest
+ - STEP 40: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (29/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:18,223 [TScriptEngine] INFO  JobRequest
+ - STEP 41: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (29/42)
+ - [16] Else
+
+
+2023-07-26 12:38:18,225 [TScriptEngine] INFO  JobRequest
+ - STEP 42: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (29/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:18,226 [TScriptEngine] INFO  JobRequest
+ - STEP 43: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:18,228 [TScriptEngine] INFO  JobRequest
+ - STEP 44: S0c44654008c841159a0058b09345b194 (6/22) - (29/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:18,230 [TScriptEngine] INFO  JobRequest
+ - STEP 45: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (29/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:18,232 [TScriptEngine] INFO  JobRequest
+ - STEP 46: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (29/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:18,234 [TScriptEngine] INFO  JobRequest
+ - STEP 47: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (29/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:19,110 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:19,110 [T15] INFO  UIAEventHandler
+waiting for 816 msec during the screen structure is changing.
+
+2023-07-26 12:38:19,473 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:19,473 [T15] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:19,476 [TScriptEngine] INFO  JobRequest
+ - STEP 48: S3b65a20d1728462982dfa724387e33d5 (11/22) - (29/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:19,478 [TScriptEngine] INFO  JobRequest
+ - STEP 49: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (29/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:20,368 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:20,368 [T24] INFO  UIAEventHandler
+waiting for 836 msec during the screen structure is changing.
+
+2023-07-26 12:38:20,735 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:20,735 [T24] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:20,738 [TScriptEngine] INFO  JobRequest
+ - STEP 50: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:20,741 [TScriptEngine] INFO  JobRequest
+ - STEP 51: S0c44654008c841159a0058b09345b194 (6/22) - (29/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:20,744 [TScriptEngine] INFO  JobRequest
+ - STEP 52: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (29/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:20,747 [TScriptEngine] INFO  JobRequest
+ - STEP 53: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (29/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:20,748 [TScriptEngine] INFO  JobRequest
+ - STEP 54: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (29/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:21,631 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:21,631 [T6] INFO  UIAEventHandler
+waiting for 829 msec during the screen structure is changing.
+
+2023-07-26 12:38:21,997 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:21,997 [T6] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:22,000 [TScriptEngine] INFO  JobRequest
+ - STEP 55: S3b65a20d1728462982dfa724387e33d5 (11/22) - (29/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:22,004 [TScriptEngine] INFO  JobRequest
+ - STEP 56: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (29/42)
+ - [13] Else
+
+
+2023-07-26 12:38:22,006 [TScriptEngine] INFO  JobRequest
+ - STEP 57: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (29/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:22,008 [TScriptEngine] INFO  JobRequest
+ - STEP 58: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (29/42)
+ - [16] Else
+
+
+2023-07-26 12:38:22,009 [TScriptEngine] INFO  JobRequest
+ - STEP 59: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (29/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:22,011 [TScriptEngine] INFO  JobRequest
+ - STEP 60: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:22,012 [TScriptEngine] INFO  JobRequest
+ - STEP 61: S0c44654008c841159a0058b09345b194 (6/22) - (29/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:22,014 [TScriptEngine] INFO  JobRequest
+ - STEP 62: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (29/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:22,016 [TScriptEngine] INFO  JobRequest
+ - STEP 63: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (29/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:22,018 [TScriptEngine] INFO  JobRequest
+ - STEP 64: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (29/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:22,895 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:22,895 [T12] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:23,245 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:23,245 [T12] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:23,248 [TScriptEngine] INFO  JobRequest
+ - STEP 65: S3b65a20d1728462982dfa724387e33d5 (11/22) - (29/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:23,252 [TScriptEngine] INFO  JobRequest
+ - STEP 66: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (29/42)
+ - [13] Else
+
+
+2023-07-26 12:38:23,253 [TScriptEngine] INFO  JobRequest
+ - STEP 67: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (29/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:23,255 [TScriptEngine] INFO  JobRequest
+ - STEP 68: S3f4b9dd0e7c247d48ca7c98fa14cb3aa (15/22) - (29/42)
+ - [15] SetCheckState
+
+
+2023-07-26 12:38:24,142 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:24,142 [T15] INFO  UIAEventHandler
+waiting for 835 msec during the screen structure is changing.
+
+2023-07-26 12:38:24,501 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:24,501 [T15] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:24,523 [TScriptEngine] INFO  JobRequest
+ - STEP 69: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (29/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:24,525 [TScriptEngine] INFO  JobRequest
+ - STEP 70: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (29/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:24,527 [TScriptEngine] INFO  JobRequest
+ - STEP 71: S5d556b9be2184d659971025951e5ee3b (20/22) - (30/42)
+ - [20] End-Foreach
+
+
+2023-07-26 12:38:24,529 [TScriptEngine] INFO  JobRequest
+ - STEP 72: S5cd83eca9a6a4f028a620b67e88dd5ef (5/22) - (30/42)
+ - [5] Foreach
+
+
+2023-07-26 12:38:24,532 [TScriptEngine] INFO  JobRequest
+ - STEP 73: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:24,534 [TScriptEngine] INFO  JobRequest
+ - STEP 74: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:24,536 [TScriptEngine] INFO  JobRequest
+ - STEP 75: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:24,538 [TScriptEngine] INFO  JobRequest
+ - STEP 76: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:25,394 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:25,394 [T23] INFO  UIAEventHandler
+waiting for 806 msec during the screen structure is changing.
+
+2023-07-26 12:38:25,747 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:25,747 [T23] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:25,750 [TScriptEngine] INFO  JobRequest
+ - STEP 77: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:25,752 [TScriptEngine] INFO  JobRequest
+ - STEP 78: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (30/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:26,648 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:26,648 [T17] INFO  UIAEventHandler
+waiting for 845 msec during the screen structure is changing.
+
+2023-07-26 12:38:27,017 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:27,017 [T17] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:27,026 [TScriptEngine] INFO  JobRequest
+ - STEP 79: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:27,028 [TScriptEngine] INFO  JobRequest
+ - STEP 80: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:27,031 [TScriptEngine] INFO  JobRequest
+ - STEP 81: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:27,033 [TScriptEngine] INFO  JobRequest
+ - STEP 82: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:27,034 [TScriptEngine] INFO  JobRequest
+ - STEP 83: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:27,912 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:27,912 [T25] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:28,276 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:28,276 [T25] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:28,279 [TScriptEngine] INFO  JobRequest
+ - STEP 84: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:28,281 [TScriptEngine] INFO  JobRequest
+ - STEP 85: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:28,283 [TScriptEngine] INFO  JobRequest
+ - STEP 86: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:28,285 [TScriptEngine] INFO  JobRequest
+ - STEP 87: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:28,286 [TScriptEngine] INFO  JobRequest
+ - STEP 88: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:28,288 [TScriptEngine] INFO  JobRequest
+ - STEP 89: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:28,289 [TScriptEngine] INFO  JobRequest
+ - STEP 90: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:28,291 [TScriptEngine] INFO  JobRequest
+ - STEP 91: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:28,294 [TScriptEngine] INFO  JobRequest
+ - STEP 92: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:28,295 [TScriptEngine] INFO  JobRequest
+ - STEP 93: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:29,171 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:29,171 [T23] INFO  UIAEventHandler
+waiting for 824 msec during the screen structure is changing.
+
+2023-07-26 12:38:29,539 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:29,539 [T23] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:29,542 [TScriptEngine] INFO  JobRequest
+ - STEP 94: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:29,545 [TScriptEngine] INFO  JobRequest
+ - STEP 95: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (30/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:30,440 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:30,440 [T15] INFO  UIAEventHandler
+waiting for 847 msec during the screen structure is changing.
+
+2023-07-26 12:38:30,798 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:30,798 [T15] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:30,814 [TScriptEngine] INFO  JobRequest
+ - STEP 96: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:30,817 [TScriptEngine] INFO  JobRequest
+ - STEP 97: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:30,819 [TScriptEngine] INFO  JobRequest
+ - STEP 98: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:30,823 [TScriptEngine] INFO  JobRequest
+ - STEP 99: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:30,824 [TScriptEngine] INFO  JobRequest
+ - STEP 100: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:31,699 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:31,699 [T12] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:32,067 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:32,067 [T12] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:32,070 [TScriptEngine] INFO  JobRequest
+ - STEP 101: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:32,073 [TScriptEngine] INFO  JobRequest
+ - STEP 102: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:32,074 [TScriptEngine] INFO  JobRequest
+ - STEP 103: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:32,076 [TScriptEngine] INFO  JobRequest
+ - STEP 104: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:32,078 [TScriptEngine] INFO  JobRequest
+ - STEP 105: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:32,079 [TScriptEngine] INFO  JobRequest
+ - STEP 106: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:32,081 [TScriptEngine] INFO  JobRequest
+ - STEP 107: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:32,083 [TScriptEngine] INFO  JobRequest
+ - STEP 108: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:32,085 [TScriptEngine] INFO  JobRequest
+ - STEP 109: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:32,086 [TScriptEngine] INFO  JobRequest
+ - STEP 110: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:32,963 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:32,963 [T25] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:33,318 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:33,318 [T25] INFO  UIAEventHandler
+waiting for 72 msec during the screen structure is changing.
+
+2023-07-26 12:38:33,320 [TScriptEngine] INFO  JobRequest
+ - STEP 111: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:33,323 [TScriptEngine] INFO  JobRequest
+ - STEP 112: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:33,324 [TScriptEngine] INFO  JobRequest
+ - STEP 113: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:33,326 [TScriptEngine] INFO  JobRequest
+ - STEP 114: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:33,328 [TScriptEngine] INFO  JobRequest
+ - STEP 115: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:33,329 [TScriptEngine] INFO  JobRequest
+ - STEP 116: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:33,331 [TScriptEngine] INFO  JobRequest
+ - STEP 117: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:33,333 [TScriptEngine] INFO  JobRequest
+ - STEP 118: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:33,335 [TScriptEngine] INFO  JobRequest
+ - STEP 119: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:33,337 [TScriptEngine] INFO  JobRequest
+ - STEP 120: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:34,222 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:34,222 [T24] INFO  UIAEventHandler
+waiting for 835 msec during the screen structure is changing.
+
+2023-07-26 12:38:34,594 [T24] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:34,594 [T24] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:34,596 [TScriptEngine] INFO  JobRequest
+ - STEP 121: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:34,599 [TScriptEngine] INFO  JobRequest
+ - STEP 122: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:34,600 [TScriptEngine] INFO  JobRequest
+ - STEP 123: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:34,602 [TScriptEngine] INFO  JobRequest
+ - STEP 124: S3f4b9dd0e7c247d48ca7c98fa14cb3aa (15/22) - (30/42)
+ - [15] SetCheckState
+
+
+2023-07-26 12:38:35,489 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:35,489 [T18] INFO  UIAEventHandler
+waiting for 836 msec during the screen structure is changing.
+
+2023-07-26 12:38:35,851 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:35,851 [T18] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:35,867 [TScriptEngine] INFO  JobRequest
+ - STEP 125: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:35,869 [TScriptEngine] INFO  JobRequest
+ - STEP 126: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:35,872 [TScriptEngine] INFO  JobRequest
+ - STEP 127: S5d556b9be2184d659971025951e5ee3b (20/22) - (30/42)
+ - [20] End-Foreach
+
+
+2023-07-26 12:38:35,874 [TScriptEngine] INFO  JobRequest
+ - STEP 128: S5cd83eca9a6a4f028a620b67e88dd5ef (5/22) - (30/42)
+ - [5] Foreach
+
+
+2023-07-26 12:38:35,877 [TScriptEngine] INFO  JobRequest
+ - STEP 129: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:35,879 [TScriptEngine] INFO  JobRequest
+ - STEP 130: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:35,881 [TScriptEngine] INFO  JobRequest
+ - STEP 131: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:35,882 [TScriptEngine] INFO  JobRequest
+ - STEP 132: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:36,748 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:36,748 [T12] INFO  UIAEventHandler
+waiting for 815 msec during the screen structure is changing.
+
+2023-07-26 12:38:37,113 [T12] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:37,113 [T12] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:37,115 [TScriptEngine] INFO  JobRequest
+ - STEP 133: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:37,118 [TScriptEngine] INFO  JobRequest
+ - STEP 134: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (30/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:38,011 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:38,011 [T25] INFO  UIAEventHandler
+waiting for 844 msec during the screen structure is changing.
+
+2023-07-26 12:38:38,371 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:38,371 [T25] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:38,382 [TScriptEngine] INFO  JobRequest
+ - STEP 135: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:38,384 [TScriptEngine] INFO  JobRequest
+ - STEP 136: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:38,387 [TScriptEngine] INFO  JobRequest
+ - STEP 137: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:38,390 [TScriptEngine] INFO  JobRequest
+ - STEP 138: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:38,391 [TScriptEngine] INFO  JobRequest
+ - STEP 139: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:39,268 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:39,268 [T17] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:39,632 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:39,632 [T17] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:39,635 [TScriptEngine] INFO  JobRequest
+ - STEP 140: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:39,639 [TScriptEngine] INFO  JobRequest
+ - STEP 141: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:39,641 [TScriptEngine] INFO  JobRequest
+ - STEP 142: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:39,644 [TScriptEngine] INFO  JobRequest
+ - STEP 143: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:39,646 [TScriptEngine] INFO  JobRequest
+ - STEP 144: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:39,648 [TScriptEngine] INFO  JobRequest
+ - STEP 145: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:39,649 [TScriptEngine] INFO  JobRequest
+ - STEP 146: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:39,651 [TScriptEngine] INFO  JobRequest
+ - STEP 147: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:39,653 [TScriptEngine] INFO  JobRequest
+ - STEP 148: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:39,655 [TScriptEngine] INFO  JobRequest
+ - STEP 149: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:40,531 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:40,531 [T18] INFO  UIAEventHandler
+waiting for 826 msec during the screen structure is changing.
+
+2023-07-26 12:38:40,892 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:40,892 [T18] INFO  UIAEventHandler
+waiting for 72 msec during the screen structure is changing.
+
+2023-07-26 12:38:40,895 [TScriptEngine] INFO  JobRequest
+ - STEP 150: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:40,902 [TScriptEngine] INFO  JobRequest
+ - STEP 151: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:40,903 [TScriptEngine] INFO  JobRequest
+ - STEP 152: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:40,905 [TScriptEngine] INFO  JobRequest
+ - STEP 153: S3f4b9dd0e7c247d48ca7c98fa14cb3aa (15/22) - (30/42)
+ - [15] SetCheckState
+
+
+2023-07-26 12:38:41,799 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:41,799 [T18] INFO  UIAEventHandler
+waiting for 845 msec during the screen structure is changing.
+
+2023-07-26 12:38:42,172 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:42,172 [T18] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:42,185 [TScriptEngine] INFO  JobRequest
+ - STEP 154: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:42,186 [TScriptEngine] INFO  JobRequest
+ - STEP 155: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:42,188 [TScriptEngine] INFO  JobRequest
+ - STEP 156: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:42,190 [TScriptEngine] INFO  JobRequest
+ - STEP 157: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:42,192 [TScriptEngine] INFO  JobRequest
+ - STEP 158: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:42,193 [TScriptEngine] INFO  JobRequest
+ - STEP 159: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:43,071 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:43,071 [T26] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:43,421 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:43,421 [T26] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:43,423 [TScriptEngine] INFO  JobRequest
+ - STEP 160: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:43,442 [TScriptEngine] INFO  JobRequest
+ - STEP 161: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:43,443 [TScriptEngine] INFO  JobRequest
+ - STEP 162: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:43,445 [TScriptEngine] INFO  JobRequest
+ - STEP 163: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:43,447 [TScriptEngine] INFO  JobRequest
+ - STEP 164: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:43,448 [TScriptEngine] INFO  JobRequest
+ - STEP 165: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:43,450 [TScriptEngine] INFO  JobRequest
+ - STEP 166: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:43,452 [TScriptEngine] INFO  JobRequest
+ - STEP 167: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:43,455 [TScriptEngine] INFO  JobRequest
+ - STEP 168: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:43,456 [TScriptEngine] INFO  JobRequest
+ - STEP 169: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:44,322 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:44,322 [T15] INFO  UIAEventHandler
+waiting for 814 msec during the screen structure is changing.
+
+2023-07-26 12:38:44,703 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:44,703 [T15] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:44,706 [TScriptEngine] INFO  JobRequest
+ - STEP 170: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:44,709 [TScriptEngine] INFO  JobRequest
+ - STEP 171: S7a2932eec89a4bd2aa1dffc77fbd6dcd (12/22) - (30/42)
+ - [12] SetCheckState
+
+
+2023-07-26 12:38:45,597 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:45,597 [T18] INFO  UIAEventHandler
+waiting for 831 msec during the screen structure is changing.
+
+2023-07-26 12:38:45,963 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:45,963 [T18] INFO  UIAEventHandler
+waiting for 72 msec during the screen structure is changing.
+
+2023-07-26 12:38:45,973 [TScriptEngine] INFO  JobRequest
+ - STEP 172: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:45,975 [TScriptEngine] INFO  JobRequest
+ - STEP 173: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:45,977 [TScriptEngine] INFO  JobRequest
+ - STEP 174: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:45,979 [TScriptEngine] INFO  JobRequest
+ - STEP 175: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:45,981 [TScriptEngine] INFO  JobRequest
+ - STEP 176: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:46,860 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:46,860 [T15] INFO  UIAEventHandler
+waiting for 827 msec during the screen structure is changing.
+
+2023-07-26 12:38:47,235 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:47,235 [T15] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:47,237 [TScriptEngine] INFO  JobRequest
+ - STEP 177: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:47,240 [TScriptEngine] INFO  JobRequest
+ - STEP 178: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:47,241 [TScriptEngine] INFO  JobRequest
+ - STEP 179: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:47,243 [TScriptEngine] INFO  JobRequest
+ - STEP 180: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:47,245 [TScriptEngine] INFO  JobRequest
+ - STEP 181: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:47,247 [TScriptEngine] INFO  JobRequest
+ - STEP 182: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:47,248 [TScriptEngine] INFO  JobRequest
+ - STEP 183: S5d556b9be2184d659971025951e5ee3b (20/22) - (30/42)
+ - [20] End-Foreach
+
+
+2023-07-26 12:38:47,250 [TScriptEngine] INFO  JobRequest
+ - STEP 184: S5cd83eca9a6a4f028a620b67e88dd5ef (5/22) - (30/42)
+ - [5] Foreach
+
+
+2023-07-26 12:38:47,253 [TScriptEngine] INFO  JobRequest
+ - STEP 185: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:47,255 [TScriptEngine] INFO  JobRequest
+ - STEP 186: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:47,257 [TScriptEngine] INFO  JobRequest
+ - STEP 187: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:47,258 [TScriptEngine] INFO  JobRequest
+ - STEP 188: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:48,136 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:48,136 [T23] INFO  UIAEventHandler
+waiting for 824 msec during the screen structure is changing.
+
+2023-07-26 12:38:48,490 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:48,490 [T23] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:48,493 [TScriptEngine] INFO  JobRequest
+ - STEP 189: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:48,495 [TScriptEngine] INFO  JobRequest
+ - STEP 190: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:48,497 [TScriptEngine] INFO  JobRequest
+ - STEP 191: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:48,499 [TScriptEngine] INFO  JobRequest
+ - STEP 192: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:48,501 [TScriptEngine] INFO  JobRequest
+ - STEP 193: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:48,502 [TScriptEngine] INFO  JobRequest
+ - STEP 194: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:48,504 [TScriptEngine] INFO  JobRequest
+ - STEP 195: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:48,507 [TScriptEngine] INFO  JobRequest
+ - STEP 196: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:48,509 [TScriptEngine] INFO  JobRequest
+ - STEP 197: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:48,511 [TScriptEngine] INFO  JobRequest
+ - STEP 198: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:49,393 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:49,393 [T17] INFO  UIAEventHandler
+waiting for 824 msec during the screen structure is changing.
+
+2023-07-26 12:38:49,754 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:49,754 [T17] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:49,757 [TScriptEngine] INFO  JobRequest
+ - STEP 199: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:49,760 [TScriptEngine] INFO  JobRequest
+ - STEP 200: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:49,761 [TScriptEngine] INFO  JobRequest
+ - STEP 201: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:49,763 [TScriptEngine] INFO  JobRequest
+ - STEP 202: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:49,765 [TScriptEngine] INFO  JobRequest
+ - STEP 203: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:49,766 [TScriptEngine] INFO  JobRequest
+ - STEP 204: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:49,768 [TScriptEngine] INFO  JobRequest
+ - STEP 205: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:49,770 [TScriptEngine] INFO  JobRequest
+ - STEP 206: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:49,772 [TScriptEngine] INFO  JobRequest
+ - STEP 207: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:49,774 [TScriptEngine] INFO  JobRequest
+ - STEP 208: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:50,652 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:50,652 [T6] INFO  UIAEventHandler
+waiting for 827 msec during the screen structure is changing.
+
+2023-07-26 12:38:51,021 [T6] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:51,021 [T6] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:51,023 [TScriptEngine] INFO  JobRequest
+ - STEP 209: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:51,026 [TScriptEngine] INFO  JobRequest
+ - STEP 210: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:51,028 [TScriptEngine] INFO  JobRequest
+ - STEP 211: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:51,030 [TScriptEngine] INFO  JobRequest
+ - STEP 212: S3f4b9dd0e7c247d48ca7c98fa14cb3aa (15/22) - (30/42)
+ - [15] SetCheckState
+
+
+2023-07-26 12:38:51,917 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:51,917 [T26] INFO  UIAEventHandler
+waiting for 835 msec during the screen structure is changing.
+
+2023-07-26 12:38:52,278 [T26] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:52,278 [T26] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:52,291 [TScriptEngine] INFO  JobRequest
+ - STEP 213: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:52,293 [TScriptEngine] INFO  JobRequest
+ - STEP 214: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:52,295 [TScriptEngine] INFO  JobRequest
+ - STEP 215: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:52,298 [TScriptEngine] INFO  JobRequest
+ - STEP 216: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:52,301 [TScriptEngine] INFO  JobRequest
+ - STEP 217: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:52,302 [TScriptEngine] INFO  JobRequest
+ - STEP 218: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:53,172 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:53,172 [T17] INFO  UIAEventHandler
+waiting for 815 msec during the screen structure is changing.
+
+2023-07-26 12:38:53,540 [T17] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:53,540 [T17] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:53,543 [TScriptEngine] INFO  JobRequest
+ - STEP 219: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:53,545 [TScriptEngine] INFO  JobRequest
+ - STEP 220: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:53,547 [TScriptEngine] INFO  JobRequest
+ - STEP 221: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:53,549 [TScriptEngine] INFO  JobRequest
+ - STEP 222: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:53,550 [TScriptEngine] INFO  JobRequest
+ - STEP 223: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:53,552 [TScriptEngine] INFO  JobRequest
+ - STEP 224: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:53,553 [TScriptEngine] INFO  JobRequest
+ - STEP 225: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:53,555 [TScriptEngine] INFO  JobRequest
+ - STEP 226: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:53,557 [TScriptEngine] INFO  JobRequest
+ - STEP 227: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:53,559 [TScriptEngine] INFO  JobRequest
+ - STEP 228: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:54,437 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:54,437 [T25] INFO  UIAEventHandler
+waiting for 826 msec during the screen structure is changing.
+
+2023-07-26 12:38:54,806 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:54,806 [T25] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:54,809 [TScriptEngine] INFO  JobRequest
+ - STEP 229: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:54,812 [TScriptEngine] INFO  JobRequest
+ - STEP 230: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:54,813 [TScriptEngine] INFO  JobRequest
+ - STEP 231: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:54,815 [TScriptEngine] INFO  JobRequest
+ - STEP 232: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:54,817 [TScriptEngine] INFO  JobRequest
+ - STEP 233: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:54,818 [TScriptEngine] INFO  JobRequest
+ - STEP 234: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:54,820 [TScriptEngine] INFO  JobRequest
+ - STEP 235: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:54,822 [TScriptEngine] INFO  JobRequest
+ - STEP 236: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:54,824 [TScriptEngine] INFO  JobRequest
+ - STEP 237: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:54,825 [TScriptEngine] INFO  JobRequest
+ - STEP 238: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:55,702 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:55,702 [T15] INFO  UIAEventHandler
+waiting for 824 msec during the screen structure is changing.
+
+2023-07-26 12:38:56,058 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:56,058 [T15] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:56,061 [TScriptEngine] INFO  JobRequest
+ - STEP 239: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:56,065 [TScriptEngine] INFO  JobRequest
+ - STEP 240: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:56,067 [TScriptEngine] INFO  JobRequest
+ - STEP 241: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:56,069 [TScriptEngine] INFO  JobRequest
+ - STEP 242: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:56,071 [TScriptEngine] INFO  JobRequest
+ - STEP 243: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:56,073 [TScriptEngine] INFO  JobRequest
+ - STEP 244: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:56,074 [TScriptEngine] INFO  JobRequest
+ - STEP 245: S5d556b9be2184d659971025951e5ee3b (20/22) - (30/42)
+ - [20] End-Foreach
+
+
+2023-07-26 12:38:56,076 [TScriptEngine] INFO  JobRequest
+ - STEP 246: S5cd83eca9a6a4f028a620b67e88dd5ef (5/22) - (30/42)
+ - [5] Foreach
+
+
+2023-07-26 12:38:56,079 [TScriptEngine] INFO  JobRequest
+ - STEP 247: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:56,081 [TScriptEngine] INFO  JobRequest
+ - STEP 248: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:56,083 [TScriptEngine] INFO  JobRequest
+ - STEP 249: S66dc504a908c4744a108a419457f860e (8/22) - (30/42)
+ - [8] Continue
+
+
+2023-07-26 12:38:56,086 [TScriptEngine] INFO  JobRequest
+ - STEP 250: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:56,088 [TScriptEngine] INFO  JobRequest
+ - STEP 251: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:56,090 [TScriptEngine] INFO  JobRequest
+ - STEP 252: S66dc504a908c4744a108a419457f860e (8/22) - (30/42)
+ - [8] Continue
+
+
+2023-07-26 12:38:56,092 [TScriptEngine] INFO  JobRequest
+ - STEP 253: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:56,094 [TScriptEngine] INFO  JobRequest
+ - STEP 254: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:56,096 [TScriptEngine] INFO  JobRequest
+ - STEP 255: S66dc504a908c4744a108a419457f860e (8/22) - (30/42)
+ - [8] Continue
+
+
+2023-07-26 12:38:56,098 [TScriptEngine] INFO  JobRequest
+ - STEP 256: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:56,100 [TScriptEngine] INFO  JobRequest
+ - STEP 257: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:56,102 [TScriptEngine] INFO  JobRequest
+ - STEP 258: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:56,104 [TScriptEngine] INFO  JobRequest
+ - STEP 259: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:56,958 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:56,958 [T18] INFO  UIAEventHandler
+waiting for 804 msec during the screen structure is changing.
+
+2023-07-26 12:38:57,323 [T18] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:57,323 [T18] INFO  UIAEventHandler
+waiting for 82 msec during the screen structure is changing.
+
+2023-07-26 12:38:57,326 [TScriptEngine] INFO  JobRequest
+ - STEP 260: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:57,328 [TScriptEngine] INFO  JobRequest
+ - STEP 261: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:57,330 [TScriptEngine] INFO  JobRequest
+ - STEP 262: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:57,332 [TScriptEngine] INFO  JobRequest
+ - STEP 263: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:57,333 [TScriptEngine] INFO  JobRequest
+ - STEP 264: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:57,335 [TScriptEngine] INFO  JobRequest
+ - STEP 265: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:57,336 [TScriptEngine] INFO  JobRequest
+ - STEP 266: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:57,338 [TScriptEngine] INFO  JobRequest
+ - STEP 267: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:57,340 [TScriptEngine] INFO  JobRequest
+ - STEP 268: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:57,342 [TScriptEngine] INFO  JobRequest
+ - STEP 269: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:58,219 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:58,219 [T23] INFO  UIAEventHandler
+waiting for 825 msec during the screen structure is changing.
+
+2023-07-26 12:38:58,580 [T23] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:58,580 [T23] INFO  UIAEventHandler
+waiting for 71 msec during the screen structure is changing.
+
+2023-07-26 12:38:58,582 [TScriptEngine] INFO  JobRequest
+ - STEP 270: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:58,585 [TScriptEngine] INFO  JobRequest
+ - STEP 271: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:58,586 [TScriptEngine] INFO  JobRequest
+ - STEP 272: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:58,588 [TScriptEngine] INFO  JobRequest
+ - STEP 273: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:58,590 [TScriptEngine] INFO  JobRequest
+ - STEP 274: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:58,591 [TScriptEngine] INFO  JobRequest
+ - STEP 275: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:58,593 [TScriptEngine] INFO  JobRequest
+ - STEP 276: S0c44654008c841159a0058b09345b194 (6/22) - (30/42)
+ - [6] Assign
+
+
+2023-07-26 12:38:58,595 [TScriptEngine] INFO  JobRequest
+ - STEP 277: S38ee26c734ba4065a38d010e1e2333f6 (7/22) - (30/42)
+ - [7] IfThen
+
+
+2023-07-26 12:38:58,597 [TScriptEngine] INFO  JobRequest
+ - STEP 278: S9aeeb04b93fe4f1a99b1184bb23bad96 (9/22) - (30/42)
+ - [9] End-IfThen
+
+
+2023-07-26 12:38:58,598 [TScriptEngine] INFO  JobRequest
+ - STEP 279: Sca9dfcf1158042f1a12447b12fe1352d (10/22) - (30/42)
+ - [10] GetCheckState
+
+
+2023-07-26 12:38:59,481 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:59,481 [T15] INFO  UIAEventHandler
+waiting for 826 msec during the screen structure is changing.
+
+2023-07-26 12:38:59,849 [T15] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:38:59,849 [T15] INFO  UIAEventHandler
+waiting for 81 msec during the screen structure is changing.
+
+2023-07-26 12:38:59,852 [TScriptEngine] INFO  JobRequest
+ - STEP 280: S3b65a20d1728462982dfa724387e33d5 (11/22) - (30/42)
+ - [11] IfElse
+
+
+2023-07-26 12:38:59,855 [TScriptEngine] INFO  JobRequest
+ - STEP 281: S04c8d9afda404805b5a11e15b84a7a19 (13/22) - (30/42)
+ - [13] Else
+
+
+2023-07-26 12:38:59,856 [TScriptEngine] INFO  JobRequest
+ - STEP 282: Sf9c2eb83c18a41aa8c3669d7b5462bcf (14/22) - (30/42)
+ - [14] IfElse
+
+
+2023-07-26 12:38:59,858 [TScriptEngine] INFO  JobRequest
+ - STEP 283: S1cc578f57e934a87b7048a3f280ed642 (16/22) - (30/42)
+ - [16] Else
+
+
+2023-07-26 12:38:59,860 [TScriptEngine] INFO  JobRequest
+ - STEP 284: S1fc299ff59bc497c8a1953a042d51934 (17/22) - (30/42)
+ - [17] End-IfElse
+
+
+2023-07-26 12:38:59,861 [TScriptEngine] INFO  JobRequest
+ - STEP 285: Sbe2e029680ab45558a37f1a750c43f84 (18/22) - (30/42)
+ - [18] End-IfElse
+
+
+2023-07-26 12:38:59,863 [TScriptEngine] INFO  JobRequest
+ - STEP 286: S5d556b9be2184d659971025951e5ee3b (20/22) - (30/42)
+ - [20] End-Foreach
+
+
+2023-07-26 12:38:59,865 [TScriptEngine] INFO  JobRequest
+ - STEP 287: Scbc7f427a6f24c428447dbb3ba3fb3a0 (21/22) - (31/42)
+ - [21] End-Foreach
+
+
+2023-07-26 12:38:59,866 [TScriptEngine] INFO  JobRequest
+ - STEP 288: S209aa91c4c10415db999a8faa777042c (22/22) - (32/42)
+ - [22] Click
+
+
+2023-07-26 12:39:00,749 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:39:00,749 [T25] INFO  UIAEventHandler
+waiting for 829 msec during the screen structure is changing.
+
+2023-07-26 12:39:00,996 [T25] DEBUG UIAEventHandler
+UI Structure Changed Count: 0
+
+2023-07-26 12:39:00,996 [T25] INFO  UIAEventHandler
+waiting for 102 msec during the screen structure is changing.
+
+2023-07-26 12:39:01,559 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_증권_시가총액_조건테이블선택
+
+2023-07-26 12:39:01,560 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_네이버_증권_시가총액_조건테이블선택
+##############################################################
+38a9216d-8da5-44cb-87ab-99a2aa42f081
+T_네이버_증권_시가총액_조건테이블선택
+
+
+2023-07-26 12:39:01,561 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: P_데이터추출
+**************************************************************
+ - STEP 289: S87bad1e3a22b489896cbb59ab31c3677 (5/5) - (33/42)
+ - [5] RunTask
+
+
+2023-07-26 12:39:01,564 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: StartTask - T_네이버_증권_시가총액_데이터추출
+##############################################################
+338901b2-44ac-4d1a-86cd-2cbd06e02e71
+T_네이버_증권_시가총액_데이터추출
+
+
+2023-07-26 12:39:01,566 [TScriptEngine] INFO  JobRequest
+**************************************************************
+*** TASK: T_네이버_증권_시가총액_데이터추출
+**************************************************************
+ - STEP 290: Sb568bb2d955b41ab96130f48b24a61be (1/10) - (34/42)
+ - [1] ChromeGetTableData
+
+
+2023-07-26 12:39:02,861 [TScriptEngine] INFO  JobRequest
+ - STEP 291: Sfdbc8233435643bca8d29d739f8e5035 (2/10) - (35/42)
+ - [2] ExecuteScript
+
+
+2023-07-26 12:39:03,652 [TScriptEngine] INFO  JobRequest
+ - STEP 292: Sf606b33e5b3d4ffd84ac837c28a75a34 (3/10) - (36/42)
+ - [3] CreateExcel
+
+
+2023-07-26 12:39:06,130 [TScriptEngine] INFO  JobRequest
+ - STEP 293: S1357c039a6b44f1f8b1e1f24071c66a5 (4/10) - (37/42)
+ - [4] CloseAll
+
+
+2023-07-26 12:39:06,141 [TScriptEngine] DEBUG UIAHelper
+CloseAll: EXCEL.EXE
+
+2023-07-26 12:39:07,146 [TScriptEngine] INFO  JobRequest
+ - STEP 294: S32d60b9c3ed045e099e5e0192e993919 (5/10) - (38/42)
+ - [5] OpenExcel
+
+
+2023-07-26 12:39:09,357 [TScriptEngine] INFO  JobRequest
+ - STEP 295: S5b695a7cd57f4543b03fef72e532da10 (6/10) - (39/42)
+ - [6] CreateWorkSheet
+
+
+2023-07-26 12:39:09,458 [TScriptEngine] INFO  JobRequest
+ - STEP 296: S02605ae45464477d8c68cc5d127bb056 (8/10) - (40/42)
+ - [8] WriteRange
+
+
+2023-07-26 12:39:09,709 [TScriptEngine] INFO  JobRequest
+ - STEP 297: Sad07b207d5fb481c94b65ddd742a67e9 (9/10) - (41/42)
+ - [9] SaveExcel
+
+
+2023-07-26 12:39:09,756 [TScriptEngine] INFO  JobRequest
+ - STEP 298: S8204618ac8cf4ed49e06f750f7cd6583 (10/10) - (42/42)
+ - [10] CloseExcel
+
+
+2023-07-26 12:39:09,797 [TScriptEngine] DEBUG ExcelBase
+DisposeExcel
+
+2023-07-26 12:39:10,992 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: T_네이버_증권_시가총액_데이터추출
+
+2023-07-26 12:39:10,993 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndTask - T_네이버_증권_시가총액_데이터추출
+##############################################################
+338901b2-44ac-4d1a-86cd-2cbd06e02e71
+T_네이버_증권_시가총액_데이터추출
+
+
+2023-07-26 12:39:10,993 [TScriptEngine] INFO  JobRunner
+[PASS] TASK: P_데이터추출
+
+2023-07-26 12:39:10,993 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: EndProcess - P_데이터추출
+##############################################################
+6eb09e20-8126-41d8-b582-8425b2d892b9
+P_데이터추출
+
+
+2023-07-26 12:39:11,006 [TScriptEngine] INFO  JobRunner
+RunProcess - Job Result: {}
+
+2023-07-26 12:39:11,007 [TScriptEngine] DEBUG JobManager
+Set Result State: Completed
+
+2023-07-26 12:39:11,009 [TScriptEngine] INFO  JobRunner
+Make report.
+
+2023-07-26 12:39:11,198 [TScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2023-07-26 12:39:11,199 [TScriptEngine] DEBUG JobRunner
+OnProcessCompleted
+
+2023-07-26 12:39:11,200 [T6] DEBUG JobRunner
+Start timer for checking the job to be completed.
+
+2023-07-26 12:39:11,201 [TScriptEngine] INFO  JobRunner
+Start to clean up resources.
+
+2023-07-26 12:39:11,204 [TScriptEngine] DEBUG JobRunner
+Remove all libraries
+
+2023-07-26 12:39:11,206 [TScriptEngine] DEBUG NetPlayer
+WebPlayer OnDispose
+
+2023-07-26 12:39:11,208 [TScriptEngine] DEBUG WebPlayer
+WebPlayer OnDispose : Do Nothing
+
+2023-07-26 12:39:11,208 [TScriptEngine] DEBUG UIAEventHandler
+Stop UIA event handler
+
+2023-07-26 12:39:11,233 [TScriptEngine] DEBUG UiaAppHelper
+WinHelper DisposeAppList Count: 0
+
+2023-07-26 12:39:11,233 [TScriptEngine] INFO  JobRunner
+All Resources Clear
+
+2023-07-26 12:39:11,234 [TScriptEngine] DEBUG JobRunner
+OnCompleted
+
+2023-07-26 12:39:11,234 [TScriptEngine] DEBUG JobRunner
+SendJobResult: Completed
+
+2023-07-26 12:39:11,234 [TScriptEngine] INFO  JobRequest
+##############################################################
+### STATE: Completed
+##############################################################
+{}
+
+
+2023-07-26 12:39:11,234 [TScriptEngine] INFO  JobRequest
+Last job life cycle state: Completed
+
+2023-07-26 12:39:11,234 [TScriptEngine] INFO  JobRequest
+Update skipped current step informations.
+
+2023-07-26 12:39:11,245 [TScriptEngine] INFO  JobRequest
+##############################################################
+### JOB COMPLETED
+##############################################################
+
+
+2023-07-26 12:39:11,247 [T7] DEBUG JobRequest
+Callback - State: Completed
+{}
+
+2023-07-26 12:39:11,248 [TScriptEngine] INFO  JobRunner
+RunProcess end
+
+2023-07-26 12:39:11,248 [T1] INFO  JobService
+Exit - Shutdown Engine BOT
+
+2023-07-26 12:39:11,249 [T7] INFO  JobRequest
+Callback - EngineClosed
+
+2023-07-26 12:39:11,250 [T7] INFO  JobService
+Disconnect agent service
+
+2023-07-26 12:39:11,252 [T7] DEBUG JobRequest
+End of Callback Sender
+

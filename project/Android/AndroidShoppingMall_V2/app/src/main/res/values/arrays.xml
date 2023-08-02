@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="yearsArray">
+        <item>선택</item>
+        <item>10대</item>
+        <item>20대</item>
+        <item>30대</item>
+        <item>40대</item>
+    </string-array>
+
+    <string-array name="type">
+        <item>화환</item>
+        <item>관상식물</item>
+        <item>기능성식물</item>
+        <item>꽃배달서비스</item>
+        <item>부가제품</item>
+    </string-array>
+</resources>
